@@ -1,0 +1,18 @@
+name: Metrics
+on:
+  schedule: [ { cron: "0 0 * * 0" } ]
+  workflow_dispatch:
+  push: { branches: [ "main" ] }
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          plugin_languages: yes
+          plugin_languages_ignored: Smarty
+          base: header
+          base_indepth: true
+          token: ${{ secrets.METRICS_TOKEN }}
