@@ -16,5 +16,3 @@ jobs:
           base_indepth: true
           plugin_languages: yes
           plugin_languages_ignored: Smarty
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
