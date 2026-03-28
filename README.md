@@ -5,12 +5,16 @@
 ---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=marchenkovit&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="180"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=marchenkovit&theme=default&hide_border=true" alt="GitHub Streak" height="180"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marchenkovit&layout=compact&theme=default&hide_border=true&langs_count=8" alt="Top Languages" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=marchenkovit&theme=default" alt="Profile Details" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=marchenkovit&theme=default" alt="Repos per Language" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=marchenkovit&theme=default" alt="Stats" height="180"/>
 </div>
 
 <div align="center">
