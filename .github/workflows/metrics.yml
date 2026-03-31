@@ -23,4 +23,6 @@ jobs:
           plugin_languages_ignored: Smarty
           config_order: base.header, base.activity, base.community, base.repositories
           repositories_skipped: ""
+          repositories_affiliations: owner, collaborator, organization_member
           commits_authoring: marchenko.vitaliy1@gmail.com
+          plugin_languages_indepth: yes
