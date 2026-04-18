@@ -124,19 +124,20 @@
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="6.5s" fill="freeze"/>
       <text x="0" y="260" fill="#9ece6a">➜</text>
       <text x="20" y="260" fill="#7dcfff" font-weight="bold">~/infra</text>
-      <text x="95" y="260" fill="#c0caf5">$ terraform apply -auto-approve</text>
+      <text x="95" y="260" fill="#c0caf5">$ ansible-playbook -i inventory site.yml</text>
     </g>
 
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="7.3s" fill="freeze"/>
-      <text x="0" y="285" fill="#bb9af7">Apply complete!</text>
-      <text x="130" y="285" fill="#a9b1d6">Resources:</text>
-      <text x="220" y="285" fill="#9ece6a" font-weight="bold">42 added</text>
-      <text x="300" y="285" fill="#a9b1d6">,</text>
-      <text x="310" y="285" fill="#e0af68" font-weight="bold">0 changed</text>
-      <text x="390" y="285" fill="#a9b1d6">,</text>
-      <text x="400" y="285" fill="#f7768e" font-weight="bold">0 destroyed</text>
-      <text x="485" y="285" fill="#a9b1d6">.</text>
+      <text x="0" y="285" fill="#bb9af7">PLAY RECAP</text>
+      <text x="100" y="285" fill="#a9b1d6">:</text>
+      <text x="115" y="285" fill="#9ece6a" font-weight="bold">ok=128</text>
+      <text x="180" y="285" fill="#a9b1d6"> </text>
+      <text x="195" y="285" fill="#7aa2f7" font-weight="bold">changed=42</text>
+      <text x="295" y="285" fill="#a9b1d6"> </text>
+      <text x="310" y="285" fill="#e0af68" font-weight="bold">skipped=0</text>
+      <text x="395" y="285" fill="#a9b1d6"> </text>
+      <text x="410" y="285" fill="#f7768e" font-weight="bold">failed=0</text>
     </g>
 
     <!-- Status line -->

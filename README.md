@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;DevOps+Engineer+%7C+SRE+%7C+Sysadmin;11%2B+Years+of+Infrastructure+Experience;20%2C000%2B+VPS+%7C+1%2C200%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Kubernetes+%7C+Linux" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;DevOps+Engineer+%7C+SRE+%7C+Sysadmin;11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Typing SVG" />
 
 </div>
 
@@ -9,7 +9,7 @@
 ### About Me
 
 - 11+ years in server administration, virtualization, and infrastructure automation
-- Experience with large-scale environments (20,000+ VPS, 1,200+ dedicated servers)
+- Experience with large-scale environments (100,000+ VPS, 10,000+ dedicated servers)
 - Focused on high-load systems, AWS automation, and secure network architecture
 - Education: Zaporizhzhia National Technical University — Information Security
 
@@ -32,6 +32,8 @@
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Chef](https://img.shields.io/badge/Chef-F09820?style=for-the-badge&logo=chef&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
@@ -61,12 +63,15 @@ graph LR
     J[🔧 Terraform] -.->|Provisions| C
     J -.->|Provisions| D
     J -.->|Provisions| F
+    K[⚙️ Ansible / Chef] -.->|Configures| E
+    K -.->|Configures| F
 
     style A fill:#00D9FF,stroke:#0a0a0a,color:#000
     style B fill:#F38020,stroke:#0a0a0a,color:#fff
     style C fill:#FF9900,stroke:#0a0a0a,color:#fff
     style D fill:#326CE5,stroke:#0a0a0a,color:#fff
     style J fill:#7B42BC,stroke:#0a0a0a,color:#fff
+    style K fill:#EE0000,stroke:#0a0a0a,color:#fff
 ```
 
 ---
