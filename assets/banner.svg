@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" font-family="'Fira Code', 'JetBrains Mono', ui-monospace, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="50%" stop-color="#1a1b26"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00D9FF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dcfff"/>
+      <stop offset="50%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00D9FF" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#accent)">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="318" width="1200" height="2" fill="url(#accent)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Left accent -->
+  <line x1="60" y1="60" x2="60" y2="260" stroke="#00D9FF" stroke-width="2" opacity="0.5"/>
+  <circle cx="60" cy="60" r="5" fill="#00D9FF" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="260" r="5" fill="#bb9af7" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- "Open to work" label -->
+  <g transform="translate(90, 55)">
+    <circle cx="8" cy="8" r="6" fill="#9ece6a" filter="url(#glow)">
+      <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="22" y="13" fill="#9ece6a" font-size="13" font-weight="600" letter-spacing="2">
+      OPEN TO REMOTE SRE / DEVOPS / PLATFORM ROLES
+    </text>
+  </g>
+
+  <!-- Name -->
+  <text x="90" y="130" fill="url(#nameGrad)" font-size="56" font-weight="800" letter-spacing="-1" filter="url(#glow)">
+    Vitalii Marchenko
+  </text>
+
+  <!-- Role -->
+  <text x="90" y="165" fill="#c0caf5" font-size="20" font-weight="500" letter-spacing="4">
+    SITE RELIABILITY ENGINEER · DEVOPS · 11+ YEARS
+  </text>
+
+  <!-- Stats box -->
+  <g transform="translate(90, 200)">
+
+    <!-- Stat 1: 100K+ VPS -->
+    <g>
+      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#00D9FF" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="100" y="32" fill="#00D9FF" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">100,000+</text>
+      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">VPS MANAGED</text>
+    </g>
+
+    <!-- Stat 2: 10K+ Dedicated -->
+    <g transform="translate(220, 0)">
+      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#7dcfff" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="100" y="32" fill="#7dcfff" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">10,000+</text>
+      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">DEDICATED SERVERS</text>
+    </g>
+
+    <!-- Stat 3: 99.9% Uptime -->
+    <g transform="translate(440, 0)">
+      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#9ece6a" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="100" y="32" fill="#9ece6a" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">99.9%+</text>
+      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">UPTIME SLA</text>
+    </g>
+
+    <!-- Stat 4: Multi-region -->
+    <g transform="translate(660, 0)">
+      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#bb9af7" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="100" y="32" fill="#bb9af7" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">6</text>
+      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">AWS REGIONS OPERATED</text>
+    </g>
+
+  </g>
+
+  <!-- Right decoration: terminal prompt -->
+  <g transform="translate(970, 60)" opacity="0.7">
+    <text x="0" y="0" fill="#9ece6a" font-size="12">➜</text>
+    <text x="18" y="0" fill="#7dcfff" font-size="12" font-weight="bold">~/infra</text>
+    <text x="78" y="0" fill="#c0caf5" font-size="12">$ kubectl get pods -A</text>
+    <text x="0" y="22" fill="#565f89" font-size="11">NAMESPACE        PODS</text>
+    <text x="0" y="40" fill="#c0caf5" font-size="11">arbostar         <tspan fill="#9ece6a">Running</tspan></text>
+    <text x="0" y="58" fill="#c0caf5" font-size="11">db-oregon        <tspan fill="#9ece6a">Running</tspan></text>
+    <text x="0" y="76" fill="#c0caf5" font-size="11">prometheus       <tspan fill="#9ece6a">Running</tspan></text>
+    <text x="0" y="94" fill="#c0caf5" font-size="11">logs             <tspan fill="#9ece6a">Running</tspan></text>
+    <text x="0" y="112" fill="#c0caf5" font-size="11">orbiter          <tspan fill="#9ece6a">Running</tspan></text>
+    <text x="0" y="130" fill="#565f89" font-size="11">───────────────</text>
+    <text x="0" y="148" fill="#e0af68" font-size="11">↑ 100% healthy</text>
+    <rect x="115" y="138" width="8" height="13" fill="#c0caf5">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Bottom tags -->
+  <g transform="translate(90, 290)" font-size="11" fill="#565f89" letter-spacing="3">
+    <text>AWS</text>
+    <text x="60">·</text>
+    <text x="80">KUBERNETES</text>
+    <text x="200">·</text>
+    <text x="220">TERRAFORM</text>
+    <text x="340">·</text>
+    <text x="360">ANSIBLE</text>
+    <text x="440">·</text>
+    <text x="460">CHEF</text>
+    <text x="520">·</text>
+    <text x="540">MULTI-REGION</text>
+    <text x="680">·</text>
+    <text x="700">HIGH-LOAD</text>
+    <text x="800">·</text>
+    <text x="820">AUTOMATION</text>
+  </g>
+</svg>

@@ -1,11 +1,14 @@
-<!-- ======================= HERO ======================= -->
+<!-- ======================= HERO BANNER ======================= -->
 <div align="center">
+  <img src="./assets/banner.svg" alt="Vitalii Marchenko — Site Reliability Engineer · DevOps · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · 6 AWS regions" width="100%"/>
+</div>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;Site+Reliability+Engineer+(SRE);11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Vitalii Marchenko — SRE / DevOps" />
+<div align="center">
 
 [![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 [![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
+[![Available](https://img.shields.io/badge/Status-Open_to_Work-9ECE6A?style=flat-square)](#)
 [![Profile Views](https://komarev.com/ghpvc/?username=marchenkovit&label=Profile%20views&color=00D9FF&style=flat-square)](#)
 
 </div>
@@ -32,6 +35,48 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 | 📈 **Scale** | Operated fleets of 100k+ VPS and 10k+ dedicated servers under continuous load |
 | 💰 **Cost optimization** | AWS spend reduction through right-sizing, spot instances, and reserved capacity planning |
 | 🔒 **Security** | Hardened network perimeters, IAM policies, secrets management, and compliance controls |
+
+---
+
+## 📈 Career Timeline
+
+```text
+2014 ─┬─ 🖥️  SysAdmin
+       │    ├─ Hundreds of VPS
+       │    └─ Linux hardening, mail / DNS / web stacks
+       │
+2017 ─┼─ 🛠️  Senior SysAdmin
+       │    ├─ 30,000+ VPS under management
+       │    └─ 5,000+ bare-metal servers across multiple DCs
+       │
+2020 ─┼─ 🤖 DevOps Engineer
+       │    ├─ Infrastructure-as-Code with Terraform
+       │    ├─ Configuration management: Ansible + Chef
+       │    └─ CI/CD pipelines, immutable infrastructure
+       │
+2026 ─┴─ 🚀 Site Reliability Engineer
+            ├─ Multi-region AWS (6 clusters, 5 continents)
+            ├─ Kubernetes-native deployments + GitOps
+            └─ Observability, SLO-driven operations
+```
+
+---
+
+## 🌍 Multi-Region Operations
+
+Production workloads I operate across **6 AWS regions on 5 continents**:
+
+<div align="center">
+
+| 🌎 Americas | 🌍 Europe | 🌏 Asia-Pacific |
+|:---:|:---:|:---:|
+| 🇺🇸 **Oregon** · `us-west-2` | 🇬🇧 **London** · `eu-west-2` | 🇦🇺 **Sydney** · `ap-southeast-2` |
+| 🇺🇸 **Ohio** · `us-east-2` | | |
+| 🇨🇦 **Canada** · `ca-central-1` | | |
+
+</div>
+
+> 🛠️ All clusters managed as code via Terraform + Kubernetes manifests in a single source-of-truth Git repository.
 
 ---
 
@@ -140,6 +185,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ![Fail2Ban](https://img.shields.io/badge/Fail2Ban-D71313?style=flat-square&logo=hackthebox&logoColor=white)
 ![iptables](https://img.shields.io/badge/iptables-2C3E50?style=flat-square&logoColor=white)
+![Let's Encrypt](https://img.shields.io/badge/Let's_Encrypt-003A70?style=flat-square&logo=letsencrypt&logoColor=white)
 
   </td>
 </tr>
@@ -164,31 +210,180 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
-## 🏗️ Infrastructure I Build
+## 🏢 Platforms & Services I Self-Host
+
+| Tool | Purpose | Why I use it |
+|---|---|---|
+| 📚 **[Outline](https://www.getoutline.com/)** | Team wiki / knowledge base | Fast, markdown-native, modern Notion alternative |
+| 💬 **[Mattermost](https://mattermost.com/)** | Team chat | Slack-compatible, fully self-hosted |
+| 🔄 **[n8n](https://n8n.io/)** | Workflow automation | No-code integrations between 200+ services |
+| 📊 **[Grafana + Prometheus + Loki](https://grafana.com/)** | Observability stack | Metrics, logs, dashboards on a single pane |
+| 📈 **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** | Uptime monitoring | Self-hosted status page |
+| 🐛 **[Sentry](https://sentry.io/)** | Error tracking | Real-time exception monitoring for apps |
+| 🔐 **[Let's Encrypt / Certbot](https://letsencrypt.org/)** | PKI / TLS | Free automated certificates at scale |
+
+---
+
+## 📂 Featured Projects
+
+<table>
+<tr>
+  <td width="50%" valign="top">
+
+### ☸️ Multi-Region Kubernetes Infrastructure
+
+GitOps-driven Kubernetes fleet across **6 AWS EKS clusters** on 5 continents. Single source-of-truth Git repo drives every cluster change — no `kubectl edit`, no drift.
+
+**Scope:** Terraform-provisioned, namespace-isolated workloads, HA MySQL / Redis, Prometheus + Grafana + Loki observability, automated client-onboarding pipelines.
+
+**Stack:** `AWS EKS` · `Terraform` · `kubectl` · `Helm` · `Prometheus` · `Loki`
+
+  </td>
+  <td width="50%" valign="top">
+
+### 🔐 Large-Scale VPN Protocol Fleet
+
+Operated a global fleet of **100,000+ VPS** serving **10+ VPN protocols** (OpenVPN, WireGuard, IKEv2/IPsec, Shadowsocks, V2Ray/Xray, Trojan, L2TP, SoftEther, OpenConnect, SOCKS5).
+
+**Scope:** automated provisioning via Chef + Terraform, per-region failover, traffic obfuscation, CRL rotation, Radius integration.
+
+**Stack:** `Chef` · `Terraform` · `strongSwan` · `OpenVPN` · `WireGuard` · `Radius`
+
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+
+### 📊 Self-Hosted Observability Stack
+
+Dedicated monitoring server scraping all production nodes over HTTPS. Unified metrics, logs, and alerts for the entire fleet.
+
+**Scope:** Prometheus + Grafana + Loki + Alertmanager, node_exporter everywhere, email + Telegram alerts, dashboards-as-code.
+
+**Stack:** `Prometheus` · `Grafana` · `Loki` · `Alertmanager` · `node_exporter`
+
+  </td>
+  <td width="50%" valign="top">
+
+### 🤖 Workflow Automation with n8n
+
+Internal automation platform replacing dozens of ad-hoc scripts. Integrates Twilio, Mailgun, AWS SES, GitHub, Mattermost, and internal APIs.
+
+**Scope:** on-call notifications, deployment triggers, client onboarding flows, report generation — all version-controlled as code.
+
+**Stack:** `n8n` · `Docker` · `Twilio` · `Mailgun` · `Webhooks`
+
+  </td>
+</tr>
+</table>
+
+---
+
+## 🏗️ Infrastructure Architecture (v2)
 
 ```mermaid
-graph LR
-    A[👥 Clients] -->|HTTPS| B[☁️ CloudFlare]
-    B -->|WAF + DDoS| C[🔀 AWS ALB]
-    C --> D[☸️ EKS Cluster]
-    D --> E[📦 Services]
-    E --> F[(🗄️ RDS)]
-    E --> G[(⚡ Redis)]
-    D --> H[📊 Prometheus]
-    H --> I[📈 Grafana]
-    J[🔧 Terraform] -.->|Provisions| C
-    J -.->|Provisions| D
-    J -.->|Provisions| F
-    K[⚙️ Ansible / Chef] -.->|Configures| E
-    K -.->|Configures| F
+graph TB
+    subgraph USERS["🌍 Global Users"]
+        U1[👥 Americas]
+        U2[👥 Europe]
+        U3[👥 APAC]
+    end
 
-    style A fill:#00D9FF,stroke:#0a0a0a,color:#000
-    style B fill:#F38020,stroke:#0a0a0a,color:#fff
-    style C fill:#FF9900,stroke:#0a0a0a,color:#fff
-    style D fill:#326CE5,stroke:#0a0a0a,color:#fff
-    style J fill:#7B42BC,stroke:#0a0a0a,color:#fff
-    style K fill:#EE0000,stroke:#0a0a0a,color:#fff
+    subgraph EDGE["☁️ Edge Layer"]
+        CF[CloudFlare<br/>WAF · DDoS · CDN]
+    end
+
+    subgraph REGIONS["🌐 Multi-Region AWS"]
+        direction LR
+        subgraph US["🇺🇸 us-west-2 / us-east-2"]
+            ALB1[ALB]
+            EKS1[EKS Cluster]
+            RDS1[(RDS Primary)]
+        end
+        subgraph EU["🇬🇧 eu-west-2"]
+            ALB2[ALB]
+            EKS2[EKS Cluster]
+            RDS2[(RDS Read Replica)]
+        end
+        subgraph APAC["🇦🇺 ap-southeast-2"]
+            ALB3[ALB]
+            EKS3[EKS Cluster]
+            RDS3[(RDS Read Replica)]
+        end
+    end
+
+    subgraph OBS["📊 Observability"]
+        PROM[Prometheus]
+        GRAF[Grafana]
+        LOKI[Loki]
+        ALERT[Alertmanager]
+    end
+
+    subgraph BACKUP["💾 DR & Backups"]
+        S3B[(S3 Snapshots)]
+        CROSS[Cross-Region Replication]
+    end
+
+    subgraph IAC["🔧 Infrastructure as Code"]
+        TF[Terraform]
+        ANS[Ansible / Chef]
+        GIT[Git Single Source of Truth]
+    end
+
+    U1 --> CF
+    U2 --> CF
+    U3 --> CF
+    CF -->|Geo-routed| ALB1
+    CF -->|Geo-routed| ALB2
+    CF -->|Geo-routed| ALB3
+
+    ALB1 --> EKS1
+    ALB2 --> EKS2
+    ALB3 --> EKS3
+
+    EKS1 --> RDS1
+    EKS2 --> RDS2
+    EKS3 --> RDS3
+
+    RDS1 -.->|Replication| RDS2
+    RDS1 -.->|Replication| RDS3
+    RDS1 -->|Automated snapshots| S3B
+    S3B -->|Cross-region| CROSS
+
+    EKS1 -->|metrics/logs| PROM
+    EKS2 -->|metrics/logs| PROM
+    EKS3 -->|metrics/logs| PROM
+    PROM --> GRAF
+    PROM --> ALERT
+    EKS1 -.->|logs| LOKI
+    EKS2 -.->|logs| LOKI
+    EKS3 -.->|logs| LOKI
+    LOKI --> GRAF
+
+    GIT --> TF
+    GIT --> ANS
+    TF -.->|Provisions| ALB1
+    TF -.->|Provisions| EKS1
+    TF -.->|Provisions| RDS1
+    ANS -.->|Configures| EKS1
+
+    style CF fill:#F38020,stroke:#0a0a0a,color:#fff
+    style PROM fill:#E6522C,stroke:#0a0a0a,color:#fff
+    style GRAF fill:#F46800,stroke:#0a0a0a,color:#fff
+    style LOKI fill:#F5A623,stroke:#0a0a0a,color:#000
+    style TF fill:#7B42BC,stroke:#0a0a0a,color:#fff
+    style ANS fill:#EE0000,stroke:#0a0a0a,color:#fff
+    style GIT fill:#F05032,stroke:#0a0a0a,color:#fff
+    style EKS1 fill:#326CE5,stroke:#0a0a0a,color:#fff
+    style EKS2 fill:#326CE5,stroke:#0a0a0a,color:#fff
+    style EKS3 fill:#326CE5,stroke:#0a0a0a,color:#fff
 ```
+
+**Design principles I follow:**
+- 🔁 **Multi-region by default** — active-active where possible, active-passive with DNS failover where required
+- 💾 **Immutable backups** — automated snapshots + cross-region replication + periodic restore drills
+- 📜 **Git as single source of truth** — every production change goes through a reviewed commit
+- 📊 **SLO-driven operations** — error budgets, burn-rate alerts, post-mortems for every incident
 
 ---
 
