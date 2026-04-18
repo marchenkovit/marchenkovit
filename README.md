@@ -104,12 +104,21 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 <tr>
   <td valign="top">
 
-**🌐 Networking & Proxies**
+**🌐 Networking & VPN Protocols**
 
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![HAProxy](https://img.shields.io/badge/HAProxy-106DA9?style=flat-square&logo=haproxy&logoColor=white)
 ![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
+![IKEv2/IPsec](https://img.shields.io/badge/IKEv2%2FIPsec-1E90FF?style=flat-square&logoColor=white)
+![strongSwan](https://img.shields.io/badge/strongSwan-E30613?style=flat-square&logoColor=white)
+![L2TP](https://img.shields.io/badge/L2TP%2FIPsec-4B8BBE?style=flat-square&logoColor=white)
+![SoftEther](https://img.shields.io/badge/SoftEther-00A4EF?style=flat-square&logoColor=white)
+![OpenConnect](https://img.shields.io/badge/OpenConnect-0080C0?style=flat-square&logoColor=white)
+![Shadowsocks](https://img.shields.io/badge/Shadowsocks-0075C2?style=flat-square&logoColor=white)
+![V2Ray/Xray](https://img.shields.io/badge/V2Ray%2FXray-705FD7?style=flat-square&logoColor=white)
+![Trojan](https://img.shields.io/badge/Trojan--GFW-222222?style=flat-square&logoColor=white)
+![SOCKS5](https://img.shields.io/badge/SOCKS5-5A6C80?style=flat-square&logoColor=white)
 
   </td>
   <td valign="top">
