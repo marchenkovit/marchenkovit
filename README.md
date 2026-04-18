@@ -18,7 +18,7 @@
 ### Daily Workflow
 
 <div align="center">
-  <img src="./assets/terminal-demo.svg" alt="Terminal Demo" width="90%"/>
+  <img src="./assets/workflow.svg" alt="Terminal Demo" width="90%"/>
 </div>
 
 ---
