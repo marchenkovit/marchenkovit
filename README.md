@@ -179,16 +179,3 @@ graph LR
     <img alt="GitHub Snake animation" src="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
-
----
-
-<div align="center">
-
-### 📬 Let's Connect
-
-If you're hiring a reliability-focused engineer for large-scale infrastructure — let's talk.
-
-[![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
-[![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
-
-</div>
