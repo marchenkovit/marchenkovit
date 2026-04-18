@@ -39,25 +39,9 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ## 📈 Career Timeline
 
-```text
-2014 ─┬─ 🖥️  SysAdmin
-       │    ├─ Hundreds of VPS
-       │    └─ Linux hardening, mail / DNS / web stacks
-       │
-2017 ─┼─ 🛠️  Senior SysAdmin
-       │    ├─ 30,000+ VPS under management
-       │    └─ 5,000+ bare-metal servers across multiple DCs
-       │
-2020 ─┼─ 🤖 DevOps Engineer
-       │    ├─ Infrastructure-as-Code with Terraform
-       │    ├─ Configuration management: Ansible + Chef
-       │    └─ CI/CD pipelines, immutable infrastructure
-       │
-2026 ─┴─ 🚀 Site Reliability Engineer
-            ├─ Multi-region AWS (6 clusters, 5 continents)
-            ├─ Kubernetes-native deployments + GitOps
-            └─ Observability, SLO-driven operations
-```
+<div align="center">
+  <img src="./assets/timeline.svg" alt="Career Timeline: SysAdmin (2014) → Senior SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2026)" width="100%"/>
+</div>
 
 ---
 
@@ -188,20 +172,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
   </td>
 </tr>
 </table>
-
----
-
-## 🏢 Platforms & Services I Self-Host
-
-| Tool | Purpose | Why I use it |
-|---|---|---|
-| 📚 **[Outline](https://www.getoutline.com/)** | Team wiki / knowledge base | Fast, markdown-native, modern Notion alternative |
-| 💬 **[Mattermost](https://mattermost.com/)** | Team chat | Slack-compatible, fully self-hosted |
-| 🔄 **[n8n](https://n8n.io/)** | Workflow automation | No-code integrations between 200+ services |
-| 📊 **[Grafana + Prometheus + Loki](https://grafana.com/)** | Observability stack | Metrics, logs, dashboards on a single pane |
-| 📈 **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** | Uptime monitoring | Self-hosted status page |
-| 🐛 **[Sentry](https://sentry.io/)** | Error tracking | Real-time exception monitoring for apps |
-| 🔐 **[Let's Encrypt / Certbot](https://letsencrypt.org/)** | PKI / TLS | Free automated certificates at scale |
 
 ---
 
