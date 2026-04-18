@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;DevOps+Engineer+%7C+SRE+%7C+Sysadmin;11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;Site+Reliability+Engineer+(SRE);11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Typing SVG" />
 
 </div>
 
