@@ -1,6 +1,7 @@
 <div align="center">
-  <h1>Hi, I'm Vitalii Marchenko</h1>
-  <h3>System Administrator / DevOps Engineer</h3>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;DevOps+Engineer+%7C+SRE+%7C+Sysadmin;11%2B+Years+of+Infrastructure+Experience;20%2C000%2B+VPS+%7C+1%2C200%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Kubernetes+%7C+Linux" alt="Typing SVG" />
+
 </div>
 
 ---
@@ -11,6 +12,14 @@
 - Experience with large-scale environments (20,000+ VPS, 1,200+ dedicated servers)
 - Focused on high-load systems, AWS automation, and secure network architecture
 - Education: Zaporizhzhia National Technical University — Information Security
+
+---
+
+### Daily Workflow
+
+<div align="center">
+  <img src="./assets/terminal-demo.svg" alt="Terminal Demo" width="90%"/>
+</div>
 
 ---
 
@@ -33,6 +42,43 @@
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
+</div>
+
+---
+
+### Infrastructure I Build
+
+```mermaid
+graph LR
+    A[👥 Clients] -->|HTTPS| B[☁️ CloudFlare]
+    B -->|WAF + DDoS| C[🔀 AWS ALB]
+    C --> D[☸️ EKS Cluster]
+    D --> E[📦 Services]
+    E --> F[(🗄️ RDS)]
+    E --> G[(⚡ Redis)]
+    D --> H[📊 Prometheus]
+    H --> I[📈 Grafana]
+    J[🔧 Terraform] -.->|Provisions| C
+    J -.->|Provisions| D
+    J -.->|Provisions| F
+
+    style A fill:#00D9FF,stroke:#0a0a0a,color:#000
+    style B fill:#F38020,stroke:#0a0a0a,color:#fff
+    style C fill:#FF9900,stroke:#0a0a0a,color:#fff
+    style D fill:#326CE5,stroke:#0a0a0a,color:#fff
+    style J fill:#7B42BC,stroke:#0a0a0a,color:#fff
+```
+
+---
+
+### Contribution Activity
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Snake animation" src="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
+  </picture>
 </div>
 
 ---
