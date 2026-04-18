@@ -45,28 +45,3 @@
 [![Telegram](https://img.shields.io/badge/Telegram-@m__a__r__c__h__e__n__k__o-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 
 </div>
-
----
-
-### GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=marchenkovit&theme=default&hide_border=true" alt="GitHub Streak" height="180"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=marchenkovit&theme=default" alt="Profile Details" width="100%"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=marchenkovit&theme=default" alt="Repos per Language" height="180"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=marchenkovit&theme=default" alt="Stats" height="180"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=marchenkovit&theme=minimal&hide_border=true&area=true" alt="Contribution Graph" height="300"/>
-</div>
-
-<div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%"/>
-</div>
