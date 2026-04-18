@@ -1,54 +1,140 @@
+<!-- ======================= HERO ======================= -->
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;Site+Reliability+Engineer+(SRE);11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&height=60&lines=Hi%2C+I'm+Vitalii+Marchenko+%F0%9F%91%8B;Site+Reliability+Engineer+(SRE);11%2B+Years+of+Infrastructure+Experience;100%2C000%2B+VPS+%7C+10%2C000%2B+Dedicated+Servers;AWS+%7C+Terraform+%7C+Ansible+%7C+Chef+%7C+K8s" alt="Vitalii Marchenko — SRE / DevOps" />
+
+[![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
+[![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
+[![Profile Views](https://komarev.com/ghpvc/?username=marchenkovit&label=Profile%20views&color=00D9FF&style=flat-square)](#)
 
 </div>
 
 ---
 
-### About Me
+## 👨‍💻 About Me
 
-- 11+ years in server administration, virtualization, and infrastructure automation
-- Experience with large-scale environments (100,000+ VPS, 10,000+ dedicated servers)
-- Focused on high-load systems, AWS automation, and secure network architecture
-- Education: Zaporizhzhia National Technical University — Information Security
+Site Reliability Engineer / DevOps with **11+ years** of hands-on experience operating and automating high-load, mission-critical infrastructure at scale.
 
----
-
-### Daily Workflow
-
-<div align="center">
-  <img src="./assets/workflow.svg" alt="Terminal Demo" width="90%"/>
-</div>
+- 🏗️ **Infrastructure at scale:** 100,000+ VPS · 10,000+ dedicated servers · multi-region AWS
+- 🔐 **Background in Information Security** (Zaporizhzhia National Technical University)
+- ⚡ **Focus areas:** high-load systems, automation, cost optimization, secure network architecture
+- 🌍 **Based in Ukraine** · Open to remote opportunities worldwide
 
 ---
 
-### Tech Stack
+## 🎯 Key Achievements
 
-<div align="center">
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
-![Chef](https://img.shields.io/badge/Chef-F09820?style=for-the-badge&logo=chef&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-</div>
+| Area | Impact |
+| --- | --- |
+| 🛡️ **Reliability** | Designed fault-tolerant infrastructure supporting 99.9%+ uptime across multi-region deployments |
+| ⚙️ **Automation** | Codified infrastructure with Terraform + Ansible/Chef, cutting manual provisioning from hours to minutes |
+| 📈 **Scale** | Operated fleets of 100k+ VPS and 10k+ dedicated servers under continuous load |
+| 💰 **Cost optimization** | AWS spend reduction through right-sizing, spot instances, and reserved capacity planning |
+| 🔒 **Security** | Hardened network perimeters, IAM policies, secrets management, and compliance controls |
 
 ---
 
-### Infrastructure I Build
+## 🛠️ Tech Stack
+
+<table>
+<tr>
+  <td valign="top" width="33%">
+
+**☁️ Cloud & Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Hetzner](https://img.shields.io/badge/Hetzner-D50C2D?style=flat-square&logo=hetzner&logoColor=white)
+![CloudFlare](https://img.shields.io/badge/CloudFlare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
+
+  </td>
+  <td valign="top" width="33%">
+
+**🔧 Infrastructure as Code**
+
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![Chef](https://img.shields.io/badge/Chef-F09820?style=flat-square&logo=chef&logoColor=white)
+
+  </td>
+  <td valign="top" width="33%">
+
+**📦 Containers & Orchestration**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+
+**🐧 Operating Systems**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)
+![CentOS](https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white)
+
+  </td>
+  <td valign="top">
+
+**🚀 CI/CD & Automation**
+
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+
+  </td>
+  <td valign="top">
+
+**📊 Observability & Storage**
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+
+**🌐 Networking & Proxies**
+
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![HAProxy](https://img.shields.io/badge/HAProxy-106DA9?style=flat-square&logo=haproxy&logoColor=white)
+![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
+
+  </td>
+  <td valign="top">
+
+**💻 Scripting & Tools**
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+  </td>
+  <td valign="top">
+
+**🔐 Security**
+
+![Fail2Ban](https://img.shields.io/badge/Fail2Ban-D71313?style=flat-square&logo=hackthebox&logoColor=white)
+![iptables](https://img.shields.io/badge/iptables-2C3E50?style=flat-square&logoColor=white)
+
+  </td>
+</tr>
+</table>
+
+---
+
+## 🏗️ Infrastructure I Build
 
 ```mermaid
 graph LR
@@ -76,7 +162,15 @@ graph LR
 
 ---
 
-### Contribution Activity
+## ⚡ Daily Workflow
+
+<div align="center">
+  <img src="./assets/workflow.svg" alt="Terminal workflow: kubectl apply → kubectl get pods → ansible-playbook" width="90%"/>
+</div>
+
+---
+
+## 🐍 Contribution Activity
 
 <div align="center">
   <picture>
@@ -88,11 +182,13 @@ graph LR
 
 ---
 
-### Contacts
-
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
-[![Telegram](https://img.shields.io/badge/Telegram-@m__a__r__c__h__e__n__k__o-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
+### 📬 Let's Connect
+
+If you're hiring a reliability-focused engineer for large-scale infrastructure — let's talk.
+
+[![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 
 </div>
