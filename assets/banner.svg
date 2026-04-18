@@ -47,16 +47,6 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- "Open to work" label -->
-  <g transform="translate(90, 55)">
-    <circle cx="8" cy="8" r="6" fill="#9ece6a" filter="url(#glow)">
-      <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <text x="22" y="13" fill="#9ece6a" font-size="13" font-weight="600" letter-spacing="2">
-      OPEN TO REMOTE SRE / DEVOPS / PLATFORM ROLES
-    </text>
-  </g>
-
   <!-- Name -->
   <text x="90" y="130" fill="url(#nameGrad)" font-size="56" font-weight="800" letter-spacing="-1" filter="url(#glow)">
     Vitalii Marchenko

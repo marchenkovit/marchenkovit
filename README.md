@@ -8,7 +8,6 @@
 [![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 [![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
-[![Available](https://img.shields.io/badge/Status-Open_to_Work-9ECE6A?style=flat-square)](#)
 [![Profile Views](https://komarev.com/ghpvc/?username=marchenkovit&label=Profile%20views&color=00D9FF&style=flat-square)](#)
 
 </div>
@@ -22,7 +21,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 - 🏗️ **Infrastructure at scale:** 100,000+ VPS · 10,000+ dedicated servers · multi-region AWS
 - 🔐 **Background in Information Security** (Zaporizhzhia National Technical University)
 - ⚡ **Focus areas:** high-load systems, automation, cost optimization, secure network architecture
-- 🌍 **Based in Ukraine** · Open to remote opportunities worldwide
+- 🌍 **Based in Ukraine**
 
 ---
 
@@ -59,24 +58,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
             ├─ Kubernetes-native deployments + GitOps
             └─ Observability, SLO-driven operations
 ```
-
----
-
-## 🌍 Multi-Region Operations
-
-Production workloads I operate across **6 AWS regions on 5 continents**:
-
-<div align="center">
-
-| 🌎 Americas | 🌍 Europe | 🌏 Asia-Pacific |
-|:---:|:---:|:---:|
-| 🇺🇸 **Oregon** · `us-west-2` | 🇬🇧 **London** · `eu-west-2` | 🇦🇺 **Sydney** · `ap-southeast-2` |
-| 🇺🇸 **Ohio** · `us-east-2` | | |
-| 🇨🇦 **Canada** · `ca-central-1` | | |
-
-</div>
-
-> 🛠️ All clusters managed as code via Terraform + Kubernetes manifests in a single source-of-truth Git repository.
 
 ---
 
@@ -221,61 +202,6 @@ Production workloads I operate across **6 AWS regions on 5 continents**:
 | 📈 **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** | Uptime monitoring | Self-hosted status page |
 | 🐛 **[Sentry](https://sentry.io/)** | Error tracking | Real-time exception monitoring for apps |
 | 🔐 **[Let's Encrypt / Certbot](https://letsencrypt.org/)** | PKI / TLS | Free automated certificates at scale |
-
----
-
-## 📂 Featured Projects
-
-<table>
-<tr>
-  <td width="50%" valign="top">
-
-### ☸️ Multi-Region Kubernetes Infrastructure
-
-GitOps-driven Kubernetes fleet across **6 AWS EKS clusters** on 5 continents. Single source-of-truth Git repo drives every cluster change — no `kubectl edit`, no drift.
-
-**Scope:** Terraform-provisioned, namespace-isolated workloads, HA MySQL / Redis, Prometheus + Grafana + Loki observability, automated client-onboarding pipelines.
-
-**Stack:** `AWS EKS` · `Terraform` · `kubectl` · `Helm` · `Prometheus` · `Loki`
-
-  </td>
-  <td width="50%" valign="top">
-
-### 🔐 Large-Scale VPN Protocol Fleet
-
-Operated a global fleet of **100,000+ VPS** serving **10+ VPN protocols** (OpenVPN, WireGuard, IKEv2/IPsec, Shadowsocks, V2Ray/Xray, Trojan, L2TP, SoftEther, OpenConnect, SOCKS5).
-
-**Scope:** automated provisioning via Chef + Terraform, per-region failover, traffic obfuscation, CRL rotation, Radius integration.
-
-**Stack:** `Chef` · `Terraform` · `strongSwan` · `OpenVPN` · `WireGuard` · `Radius`
-
-  </td>
-</tr>
-<tr>
-  <td width="50%" valign="top">
-
-### 📊 Self-Hosted Observability Stack
-
-Dedicated monitoring server scraping all production nodes over HTTPS. Unified metrics, logs, and alerts for the entire fleet.
-
-**Scope:** Prometheus + Grafana + Loki + Alertmanager, node_exporter everywhere, email + Telegram alerts, dashboards-as-code.
-
-**Stack:** `Prometheus` · `Grafana` · `Loki` · `Alertmanager` · `node_exporter`
-
-  </td>
-  <td width="50%" valign="top">
-
-### 🤖 Workflow Automation with n8n
-
-Internal automation platform replacing dozens of ad-hoc scripts. Integrates Twilio, Mailgun, AWS SES, GitHub, Mattermost, and internal APIs.
-
-**Scope:** on-call notifications, deployment triggers, client onboarding flows, report generation — all version-controlled as code.
-
-**Stack:** `n8n` · `Docker` · `Twilio` · `Mailgun` · `Webhooks`
-
-  </td>
-</tr>
-</table>
 
 ---
 
