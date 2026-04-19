@@ -95,10 +95,10 @@
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  STARTING OUT</text>
 
       <!-- Bullets -->
-      <text x="420" y="42" font-size="17" fill="#334155">
+      <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Hundreds of VPS under management
       </text>
-      <text x="420" y="72" font-size="17" fill="#334155">
+      <text x="380" y="72" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Linux hardening · mail · DNS · web
       </text>
     </g>
@@ -127,10 +127,10 @@
       <text x="62" y="42" font-size="22" fill="#0f172a" font-weight="700">Senior SysAdmin</text>
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  SCALE GROWS</text>
 
-      <text x="420" y="42" font-size="17" fill="#334155">
+      <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#d97706" font-weight="bold">30,000+</tspan> VPS under management
       </text>
-      <text x="420" y="72" font-size="17" fill="#334155">
+      <text x="380" y="72" font-size="17" fill="#334155">
         <tspan fill="#d97706" font-weight="bold">5,000+</tspan> bare-metal servers across multiple DCs
       </text>
     </g>
@@ -159,13 +159,13 @@
       <text x="62" y="42" font-size="22" fill="#0f172a" font-weight="700">DevOps Engineer</text>
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  AUTOMATION ERA</text>
 
-      <text x="420" y="42" font-size="17" fill="#334155">
+      <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Infrastructure-as-Code with <tspan fill="#7c3aed" font-weight="bold">Terraform</tspan>
       </text>
-      <text x="420" y="72" font-size="17" fill="#334155">
+      <text x="380" y="72" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Config management: <tspan fill="#dc2626" font-weight="bold">Ansible</tspan> + <tspan fill="#ea580c" font-weight="bold">Chef</tspan>
       </text>
-      <text x="420" y="102" font-size="17" fill="#334155">
+      <text x="380" y="102" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  CI/CD pipelines · immutable infrastructure
       </text>
     </g>
@@ -193,22 +193,24 @@
     <g transform="translate(220, 695)">
       <rect x="0" y="0" width="860" height="128" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2" stroke-opacity="0.6" filter="url(#cardShadow)"/>
 
-      <!-- "NOW" badge -->
-      <rect x="744" y="14" width="96" height="28" rx="14" fill="#16a34a"/>
-      <text x="792" y="33" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800" letter-spacing="3">CURRENT</text>
+      <!-- "CURRENT" badge bottom-right so it doesn't collide with bullets -->
+      <rect x="744" y="92" width="96" height="28" rx="14" fill="#16a34a"/>
+      <text x="792" y="111" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800" letter-spacing="3">CURRENT</text>
 
+      <!-- Title / subtitle left column -->
       <text x="24" y="42" font-size="28" font-weight="800">🚀</text>
       <text x="62" y="42" font-size="22" fill="#0f172a" font-weight="700">Site Reliability Engineer</text>
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  MODERN CLOUD-NATIVE</text>
 
-      <text x="24" y="108" font-size="17" fill="#334155">
+      <!-- Bullets stacked vertically like DevOps card -->
+      <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Multi-region <tspan fill="#d97706" font-weight="bold">AWS</tspan> · <tspan fill="#d97706" font-weight="bold">6 clusters</tspan> · 5 continents
       </text>
-      <text x="480" y="108" font-size="17" fill="#334155">
+      <text x="380" y="72" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  <tspan fill="#2563eb" font-weight="bold">Kubernetes</tspan>-native · GitOps
       </text>
-      <text x="744" y="108" font-size="17" fill="#334155">
-        <tspan fill="#16a34a" font-weight="bold">›</tspan>  SLO-driven
+      <text x="380" y="102" font-size="17" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  SLO-driven operations
       </text>
     </g>
   </g>
