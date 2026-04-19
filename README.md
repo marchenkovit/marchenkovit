@@ -1,6 +1,6 @@
 <!-- ======================= HERO BANNER ======================= -->
 <div align="center">
-  <img src="./assets/banner.svg" alt="Vitalii Marchenko — Site Reliability Engineer · DevOps · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · 6 AWS regions" width="100%"/>
+  <img src="./assets/hero.svg" alt="Vitalii Marchenko — Site Reliability Engineer · DevOps · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · 6 AWS regions" width="100%"/>
 </div>
 
 <div align="center">
