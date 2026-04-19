@@ -40,7 +40,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## 📈 Career Timeline
 
 <div align="center">
-  <img src="./assets/timeline-v2.svg" alt="Career Timeline: SysAdmin (2014) → Senior SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2026)" width="100%"/>
+  <img src="./assets/timeline-v3.svg" alt="Career Timeline: SysAdmin (2014) → Senior SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2026)" width="100%"/>
 </div>
 
 ---
