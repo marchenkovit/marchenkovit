@@ -40,7 +40,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## 📈 Career Timeline
 
 <div align="center">
-  <img src="./assets/timeline-v7.svg" alt="Career Timeline: SysAdmin (2014) → Senior SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2025 → present)" width="100%"/>
+  <img src="./assets/career.svg" alt="Career Timeline: SysAdmin (2014) → SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2025 → present)" width="100%"/>
 </div>
 
 ---
@@ -175,105 +175,11 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
-## 🏗️ Infrastructure Architecture (v2)
+## 🏗️ Infrastructure Architecture
 
-```mermaid
-graph TB
-    subgraph USERS["🌍 Global Users"]
-        U1[👥 Americas]
-        U2[👥 Europe]
-        U3[👥 APAC]
-    end
-
-    subgraph EDGE["☁️ Edge Layer"]
-        CF[CloudFlare<br/>WAF · DDoS · CDN]
-    end
-
-    subgraph REGIONS["🌐 Multi-Region AWS"]
-        direction LR
-        subgraph US["🇺🇸 us-west-2 / us-east-2"]
-            ALB1[ALB]
-            EKS1[EKS Cluster]
-            RDS1[(RDS Primary)]
-        end
-        subgraph EU["🇬🇧 eu-west-2"]
-            ALB2[ALB]
-            EKS2[EKS Cluster]
-            RDS2[(RDS Read Replica)]
-        end
-        subgraph APAC["🇦🇺 ap-southeast-2"]
-            ALB3[ALB]
-            EKS3[EKS Cluster]
-            RDS3[(RDS Read Replica)]
-        end
-    end
-
-    subgraph OBS["📊 Observability"]
-        PROM[Prometheus]
-        GRAF[Grafana]
-        LOKI[Loki]
-        ALERT[Alertmanager]
-    end
-
-    subgraph BACKUP["💾 DR & Backups"]
-        S3B[(S3 Snapshots)]
-        CROSS[Cross-Region Replication]
-    end
-
-    subgraph IAC["🔧 Infrastructure as Code"]
-        TF[Terraform]
-        ANS[Ansible / Chef]
-        GIT[Git Single Source of Truth]
-    end
-
-    U1 --> CF
-    U2 --> CF
-    U3 --> CF
-    CF -->|Geo-routed| ALB1
-    CF -->|Geo-routed| ALB2
-    CF -->|Geo-routed| ALB3
-
-    ALB1 --> EKS1
-    ALB2 --> EKS2
-    ALB3 --> EKS3
-
-    EKS1 --> RDS1
-    EKS2 --> RDS2
-    EKS3 --> RDS3
-
-    RDS1 -.->|Replication| RDS2
-    RDS1 -.->|Replication| RDS3
-    RDS1 -->|Automated snapshots| S3B
-    S3B -->|Cross-region| CROSS
-
-    EKS1 -->|metrics/logs| PROM
-    EKS2 -->|metrics/logs| PROM
-    EKS3 -->|metrics/logs| PROM
-    PROM --> GRAF
-    PROM --> ALERT
-    EKS1 -.->|logs| LOKI
-    EKS2 -.->|logs| LOKI
-    EKS3 -.->|logs| LOKI
-    LOKI --> GRAF
-
-    GIT --> TF
-    GIT --> ANS
-    TF -.->|Provisions| ALB1
-    TF -.->|Provisions| EKS1
-    TF -.->|Provisions| RDS1
-    ANS -.->|Configures| EKS1
-
-    style CF fill:#F38020,stroke:#0a0a0a,color:#fff
-    style PROM fill:#E6522C,stroke:#0a0a0a,color:#fff
-    style GRAF fill:#F46800,stroke:#0a0a0a,color:#fff
-    style LOKI fill:#F5A623,stroke:#0a0a0a,color:#000
-    style TF fill:#7B42BC,stroke:#0a0a0a,color:#fff
-    style ANS fill:#EE0000,stroke:#0a0a0a,color:#fff
-    style GIT fill:#F05032,stroke:#0a0a0a,color:#fff
-    style EKS1 fill:#326CE5,stroke:#0a0a0a,color:#fff
-    style EKS2 fill:#326CE5,stroke:#0a0a0a,color:#fff
-    style EKS3 fill:#326CE5,stroke:#0a0a0a,color:#fff
-```
+<div align="center">
+  <img src="./assets/infrastructure.svg" alt="Infrastructure Architecture: Global users → CloudFlare edge (WAF, DDoS, CDN, Geo-routing) → Multi-region AWS (US primary, EU replica, APAC replica, each with ALB → EKS → RDS) → Observability (Prometheus, Grafana, Loki, Alertmanager) + DR (S3 snapshots, cross-region replication, restore drills) — all managed by Terraform, Ansible, Chef, Git, GitOps" width="100%"/>
+</div>
 
 **Design principles I follow:**
 - 🔁 **Multi-region by default** — active-active where possible, active-passive with DNS failover where required

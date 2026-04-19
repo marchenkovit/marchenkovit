@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="'Fira Code', 'JetBrains Mono', ui-monospace, monospace">
+  <defs>
+    <linearGradient id="iBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <linearGradient id="flowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="33%" stop-color="#2563eb"/>
+      <stop offset="66%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="iShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="iGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284c7" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="960" fill="url(#iBg)"/>
+  <rect width="1200" height="960" fill="url(#iGrid)"/>
+
+  <!-- Header -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0s" fill="freeze"/>
+    <text x="600" y="55" text-anchor="middle" fill="#0f172a" font-size="28" font-weight="800" letter-spacing="4">
+      INFRASTRUCTURE ARCHITECTURE
+    </text>
+    <text x="600" y="85" text-anchor="middle" fill="#64748b" font-size="15" letter-spacing="5" font-weight="600">
+      ·  GLOBAL  ·  MULTI-REGION  ·  GITOPS  ·
+    </text>
+  </g>
+
+  <!-- ============ LAYER 1: GLOBAL USERS ============ -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.3s" fill="freeze"/>
+
+    <rect x="60" y="120" width="1080" height="80" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.4" filter="url(#iShadow)"/>
+
+    <text x="90" y="155" font-size="22">🌍</text>
+    <text x="128" y="155" font-size="18" fill="#0f172a" font-weight="700">GLOBAL USERS</text>
+    <text x="128" y="180" font-size="13" fill="#64748b" letter-spacing="2" font-weight="600">·  HTTPS TRAFFIC FROM 5 CONTINENTS</text>
+
+    <!-- Region pills -->
+    <g transform="translate(640, 148)">
+      <rect x="0" y="0" width="140" height="34" rx="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+      <text x="70" y="23" text-anchor="middle" fill="#0284c7" font-size="13" font-weight="700">🌎 Americas</text>
+    </g>
+    <g transform="translate(790, 148)">
+      <rect x="0" y="0" width="140" height="34" rx="17" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+      <text x="70" y="23" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="700">🌍 Europe</text>
+    </g>
+    <g transform="translate(940, 148)">
+      <rect x="0" y="0" width="160" height="34" rx="17" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+      <text x="80" y="23" text-anchor="middle" fill="#7c3aed" font-size="13" font-weight="700">🌏 Asia-Pacific</text>
+    </g>
+  </g>
+
+  <!-- Arrow L1 → L2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.7s" fill="freeze"/>
+    <line x1="600" y1="200" x2="600" y2="244" stroke="#64748b" stroke-width="2" marker-end="url(#arrowHead)"/>
+    <text x="615" y="228" font-size="11" fill="#64748b" font-weight="600" letter-spacing="1">HTTPS / TLS</text>
+  </g>
+
+  <!-- ============ LAYER 2: CLOUDFLARE EDGE ============ -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.9s" fill="freeze"/>
+
+    <rect x="60" y="250" width="1080" height="80" rx="12" fill="#ffffff" stroke="#F38020" stroke-width="1.8" stroke-opacity="0.6" filter="url(#iShadow)"/>
+
+    <text x="90" y="285" font-size="22">☁️</text>
+    <text x="128" y="285" font-size="18" fill="#0f172a" font-weight="700">CLOUDFLARE EDGE</text>
+    <text x="128" y="310" font-size="13" fill="#64748b" letter-spacing="2" font-weight="600">·  WAF · DDoS PROTECTION · CDN · GEO-ROUTING</text>
+
+    <!-- Feature pills on right -->
+    <g transform="translate(700, 263)">
+      <rect x="0" y="0" width="86" height="26" rx="13" fill="#fff7ed" stroke="#F38020" stroke-width="1"/>
+      <text x="43" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">WAF</text>
+    </g>
+    <g transform="translate(796, 263)">
+      <rect x="0" y="0" width="86" height="26" rx="13" fill="#fff7ed" stroke="#F38020" stroke-width="1"/>
+      <text x="43" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">DDoS</text>
+    </g>
+    <g transform="translate(892, 263)">
+      <rect x="0" y="0" width="86" height="26" rx="13" fill="#fff7ed" stroke="#F38020" stroke-width="1"/>
+      <text x="43" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">CDN</text>
+    </g>
+    <g transform="translate(988, 263)">
+      <rect x="0" y="0" width="112" height="26" rx="13" fill="#fff7ed" stroke="#F38020" stroke-width="1"/>
+      <text x="56" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">GEO-ROUTE</text>
+    </g>
+  </g>
+
+  <!-- Arrow L2 → regions (fan out) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>
+    <path d="M 600 330 L 600 355 L 235 355 L 235 380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+    <path d="M 600 355 L 600 380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+    <path d="M 600 330 L 600 355 L 965 355 L 965 380" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
+  </g>
+
+  <!-- ============ LAYER 3: THREE REGIONAL COLUMNS ============ -->
+  <!-- Column 1: US (Primary) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.5s" fill="freeze"/>
+
+    <rect x="80" y="390" width="310" height="290" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
+
+    <!-- Region header -->
+    <rect x="80" y="390" width="310" height="44" rx="12" fill="#dbeafe"/>
+    <rect x="80" y="422" width="310" height="12" fill="#dbeafe"/>
+    <text x="100" y="420" font-size="18">🇺🇸</text>
+    <text x="130" y="420" font-size="15" fill="#1e3a8a" font-weight="800">US — us-west-2 / us-east-2</text>
+    <rect x="298" y="400" width="80" height="24" rx="12" fill="#2563eb"/>
+    <text x="338" y="417" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800" letter-spacing="2">PRIMARY</text>
+
+    <!-- Components stacked -->
+    <g transform="translate(100, 460)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🔀</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">Application Load Balancer</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">AWS ALB · SSL termination</text>
+    </g>
+
+    <line x1="215" y1="508" x2="215" y2="525" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(100, 528)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">☸️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">EKS Cluster</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">Kubernetes · workloads · pods</text>
+    </g>
+
+    <line x1="215" y1="576" x2="215" y2="593" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(100, 596)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🗄️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">RDS Primary</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">MySQL · automated snapshots</text>
+    </g>
+  </g>
+
+  <!-- Column 2: EU -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.7s" fill="freeze"/>
+
+    <rect x="445" y="390" width="310" height="290" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
+
+    <rect x="445" y="390" width="310" height="44" rx="12" fill="#ede9fe"/>
+    <rect x="445" y="422" width="310" height="12" fill="#ede9fe"/>
+    <text x="465" y="420" font-size="18">🇬🇧</text>
+    <text x="495" y="420" font-size="15" fill="#581c87" font-weight="800">EUROPE — eu-west-2 (London)</text>
+    <rect x="663" y="400" width="80" height="24" rx="12" fill="#7c3aed"/>
+    <text x="703" y="417" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800" letter-spacing="2">REPLICA</text>
+
+    <g transform="translate(465, 460)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🔀</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">Application Load Balancer</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">AWS ALB · SSL termination</text>
+    </g>
+    <line x1="580" y1="508" x2="580" y2="525" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(465, 528)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">☸️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">EKS Cluster</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">Kubernetes · workloads · pods</text>
+    </g>
+    <line x1="580" y1="576" x2="580" y2="593" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(465, 596)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🗄️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">RDS Read Replica</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">Async replication from Primary</text>
+    </g>
+  </g>
+
+  <!-- Column 3: APAC -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.9s" fill="freeze"/>
+
+    <rect x="810" y="390" width="310" height="290" rx="12" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
+
+    <rect x="810" y="390" width="310" height="44" rx="12" fill="#dcfce7"/>
+    <rect x="810" y="422" width="310" height="12" fill="#dcfce7"/>
+    <text x="830" y="420" font-size="18">🇦🇺</text>
+    <text x="860" y="420" font-size="15" fill="#14532d" font-weight="800">APAC — ap-southeast-2</text>
+    <rect x="1028" y="400" width="80" height="24" rx="12" fill="#16a34a"/>
+    <text x="1068" y="417" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800" letter-spacing="2">REPLICA</text>
+
+    <g transform="translate(830, 460)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🔀</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">Application Load Balancer</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">AWS ALB · SSL termination</text>
+    </g>
+    <line x1="945" y1="508" x2="945" y2="525" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(830, 528)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">☸️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">EKS Cluster</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">Kubernetes · workloads · pods</text>
+    </g>
+    <line x1="945" y1="576" x2="945" y2="593" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowHead)"/>
+
+    <g transform="translate(830, 596)">
+      <rect x="0" y="0" width="270" height="48" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+      <text x="16" y="30" font-size="18">🗄️</text>
+      <text x="44" y="22" font-size="14" fill="#0f172a" font-weight="700">RDS Read Replica</text>
+      <text x="44" y="38" font-size="10" fill="#64748b" letter-spacing="1">Async replication from Primary</text>
+    </g>
+  </g>
+
+  <!-- DB Replication arrows between regions -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="0.7" dur="0.6s" begin="2.3s" fill="freeze"/>
+    <path d="M 370 620 Q 410 635 445 620" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+    <text x="388" y="615" font-size="9" fill="#475569" font-weight="700" letter-spacing="1">REPL</text>
+    <path d="M 735 620 Q 775 635 810 620" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+    <text x="753" y="615" font-size="9" fill="#475569" font-weight="700" letter-spacing="1">REPL</text>
+  </g>
+
+  <!-- ============ LAYER 4: OBSERVABILITY + DR ============ -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.5s" fill="freeze"/>
+
+    <!-- Observability (left) -->
+    <rect x="60" y="720" width="530" height="110" rx="12" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
+    <text x="84" y="755" font-size="22">📊</text>
+    <text x="116" y="755" font-size="17" fill="#0f172a" font-weight="700">OBSERVABILITY STACK</text>
+    <text x="116" y="777" font-size="12" fill="#64748b" letter-spacing="2" font-weight="600">·  METRICS · LOGS · TRACES · ALERTS</text>
+
+    <g transform="translate(84, 790)">
+      <rect x="0" y="0" width="100" height="26" rx="13" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+      <text x="50" y="18" text-anchor="middle" fill="#b91c1c" font-size="11" font-weight="700">Prometheus</text>
+    </g>
+    <g transform="translate(192, 790)">
+      <rect x="0" y="0" width="90" height="26" rx="13" fill="#ffedd5" stroke="#ea580c" stroke-width="1"/>
+      <text x="45" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">Grafana</text>
+    </g>
+    <g transform="translate(290, 790)">
+      <rect x="0" y="0" width="70" height="26" rx="13" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+      <text x="35" y="18" text-anchor="middle" fill="#92400e" font-size="11" font-weight="700">Loki</text>
+    </g>
+    <g transform="translate(368, 790)">
+      <rect x="0" y="0" width="130" height="26" rx="13" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+      <text x="65" y="18" text-anchor="middle" fill="#15803d" font-size="11" font-weight="700">Alertmanager</text>
+    </g>
+
+    <!-- DR & Backups (right) -->
+    <rect x="610" y="720" width="530" height="110" rx="12" fill="#ffffff" stroke="#475569" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
+    <text x="634" y="755" font-size="22">💾</text>
+    <text x="666" y="755" font-size="17" fill="#0f172a" font-weight="700">DR &amp; BACKUPS</text>
+    <text x="666" y="777" font-size="12" fill="#64748b" letter-spacing="2" font-weight="600">·  IMMUTABLE · GEO-REPLICATED · TESTED</text>
+
+    <g transform="translate(634, 790)">
+      <rect x="0" y="0" width="126" height="26" rx="13" fill="#f1f5f9" stroke="#475569" stroke-width="1"/>
+      <text x="63" y="18" text-anchor="middle" fill="#334155" font-size="11" font-weight="700">S3 Snapshots</text>
+    </g>
+    <g transform="translate(768, 790)">
+      <rect x="0" y="0" width="176" height="26" rx="13" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+      <text x="88" y="18" text-anchor="middle" fill="#1e3a8a" font-size="11" font-weight="700">Cross-Region Replication</text>
+    </g>
+    <g transform="translate(952, 790)">
+      <rect x="0" y="0" width="150" height="26" rx="13" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+      <text x="75" y="18" text-anchor="middle" fill="#14532d" font-size="11" font-weight="700">Restore Drills</text>
+    </g>
+  </g>
+
+  <!-- ============ LAYER 5: INFRASTRUCTURE AS CODE ============ -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.8s" fill="freeze"/>
+
+    <rect x="60" y="850" width="1080" height="90" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="1.8" stroke-opacity="0.6" filter="url(#iShadow)"/>
+
+    <text x="84" y="888" font-size="22">🔧</text>
+    <text x="116" y="888" font-size="17" fill="#0f172a" font-weight="700">INFRASTRUCTURE AS CODE</text>
+    <text x="116" y="910" font-size="12" fill="#64748b" letter-spacing="2" font-weight="600">·  GIT = SINGLE SOURCE OF TRUTH</text>
+
+    <!-- Tool pills on right -->
+    <g transform="translate(560, 874)">
+      <rect x="0" y="0" width="128" height="30" rx="15" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+      <text x="64" y="20" text-anchor="middle" fill="#6d28d9" font-size="12" font-weight="700">Terraform</text>
+    </g>
+    <g transform="translate(698, 874)">
+      <rect x="0" y="0" width="100" height="30" rx="15" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+      <text x="50" y="20" text-anchor="middle" fill="#b91c1c" font-size="12" font-weight="700">Ansible</text>
+    </g>
+    <g transform="translate(808, 874)">
+      <rect x="0" y="0" width="86" height="30" rx="15" fill="#ffedd5" stroke="#ea580c" stroke-width="1"/>
+      <text x="43" y="20" text-anchor="middle" fill="#9a3412" font-size="12" font-weight="700">Chef</text>
+    </g>
+    <g transform="translate(904, 874)">
+      <rect x="0" y="0" width="86" height="30" rx="15" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+      <text x="43" y="20" text-anchor="middle" fill="#b91c1c" font-size="12" font-weight="700">Git</text>
+    </g>
+    <g transform="translate(1000, 874)">
+      <rect x="0" y="0" width="104" height="30" rx="15" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+      <text x="52" y="20" text-anchor="middle" fill="#15803d" font-size="12" font-weight="700">GitOps</text>
+    </g>
+  </g>
+
+  <!-- Left vertical flow indicator (matches timeline style) -->
+  <rect x="28" y="120" width="4" height="820" rx="2" fill="url(#flowGrad)" opacity="0.25"/>
+</svg>
