@@ -1,42 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="'Fira Code', 'JetBrains Mono', ui-monospace, monospace">
   <defs>
     <linearGradient id="tBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="50%" stop-color="#1a1b26"/>
-      <stop offset="100%" stop-color="#0D1117"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
     </linearGradient>
     <linearGradient id="timelineLine" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00D9FF"/>
-      <stop offset="33%" stop-color="#7dcfff"/>
-      <stop offset="66%" stop-color="#bb9af7"/>
-      <stop offset="100%" stop-color="#9ece6a"/>
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="33%" stop-color="#2563eb"/>
+      <stop offset="66%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#16a34a"/>
     </linearGradient>
     <radialGradient id="nodeGlow1" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="nodeGlow2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#7dcfff" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#7dcfff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="nodeGlow3" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="nodeGlow4" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#9ece6a" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#9ece6a" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#16a34a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.12"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
     <pattern id="gridT" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00D9FF" stroke-opacity="0.05" stroke-width="1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284c7" stroke-opacity="0.05" stroke-width="1"/>
     </pattern>
   </defs>
 
@@ -47,19 +49,19 @@
   <!-- Header -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0s" fill="freeze"/>
-    <text x="600" y="55" text-anchor="middle" fill="#c0caf5" font-size="24" font-weight="700" letter-spacing="4" filter="url(#glow)">
+    <text x="600" y="55" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="800" letter-spacing="4">
       CAREER TIMELINE
     </text>
-    <text x="600" y="80" text-anchor="middle" fill="#565f89" font-size="12" letter-spacing="6">
+    <text x="600" y="80" text-anchor="middle" fill="#64748b" font-size="12" letter-spacing="6">
       · 11+ YEARS IN INFRASTRUCTURE ·
     </text>
   </g>
 
   <!-- Vertical timeline line -->
-  <rect x="178" y="120" width="4" height="540" rx="2" fill="url(#timelineLine)" opacity="0.4"/>
+  <rect x="178" y="120" width="4" height="540" rx="2" fill="url(#timelineLine)" opacity="0.7"/>
 
   <!-- Animated pulse flowing down timeline line -->
-  <circle cx="180" cy="120" r="4" fill="#ffffff" opacity="0">
+  <circle cx="180" cy="120" r="5" fill="#0f172a" opacity="0">
     <animate attributeName="cy" values="120;660" dur="4s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
   </circle>
@@ -74,30 +76,30 @@
     </circle>
 
     <!-- Year badge -->
-    <rect x="40" y="164" width="88" height="34" rx="17" fill="#1a1b26" stroke="#00D9FF" stroke-width="2"/>
-    <text x="84" y="186" text-anchor="middle" fill="#00D9FF" font-size="16" font-weight="800" letter-spacing="2" filter="url(#glow)">2014</text>
+    <rect x="40" y="164" width="88" height="34" rx="17" fill="#ffffff" stroke="#0284c7" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="84" y="186" text-anchor="middle" fill="#0284c7" font-size="16" font-weight="800" letter-spacing="2">2014</text>
 
     <!-- Node dot -->
-    <circle cx="180" cy="180" r="10" fill="#1a1b26" stroke="#00D9FF" stroke-width="3" filter="url(#glow)"/>
-    <circle cx="180" cy="180" r="4" fill="#00D9FF">
+    <circle cx="180" cy="180" r="10" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="180" cy="180" r="4" fill="#0284c7">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Content card -->
     <g transform="translate(220, 142)">
-      <rect x="0" y="0" width="860" height="80" rx="10" fill="#1a1b26" stroke="#00D9FF" stroke-width="1" stroke-opacity="0.4"/>
+      <rect x="0" y="0" width="860" height="80" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.35" filter="url(#cardShadow)"/>
 
       <!-- Title row -->
-      <text x="24" y="32" font-size="22" fill="#00D9FF" font-weight="800" filter="url(#glow)">🖥️</text>
-      <text x="56" y="32" font-size="20" fill="#c0caf5" font-weight="700">SysAdmin</text>
-      <text x="56" y="52" font-size="11" fill="#565f89" letter-spacing="2">·  STARTING OUT</text>
+      <text x="24" y="34" font-size="22" font-weight="800">🖥️</text>
+      <text x="56" y="34" font-size="20" fill="#0f172a" font-weight="700">SysAdmin</text>
+      <text x="56" y="54" font-size="11" fill="#64748b" letter-spacing="2">·  STARTING OUT</text>
 
       <!-- Bullets -->
-      <text x="420" y="30" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  Hundreds of VPS under management
+      <text x="420" y="32" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  Hundreds of VPS under management
       </text>
-      <text x="420" y="52" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  Linux hardening · mail · DNS · web
+      <text x="420" y="54" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  Linux hardening · mail · DNS · web
       </text>
     </g>
   </g>
@@ -110,26 +112,26 @@
       <animate attributeName="r" values="38;44;38" dur="3s" begin="0.5s" repeatCount="indefinite"/>
     </circle>
 
-    <rect x="40" y="304" width="88" height="34" rx="17" fill="#1a1b26" stroke="#7dcfff" stroke-width="2"/>
-    <text x="84" y="326" text-anchor="middle" fill="#7dcfff" font-size="16" font-weight="800" letter-spacing="2" filter="url(#glow)">2017</text>
+    <rect x="40" y="304" width="88" height="34" rx="17" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="84" y="326" text-anchor="middle" fill="#2563eb" font-size="16" font-weight="800" letter-spacing="2">2017</text>
 
-    <circle cx="180" cy="320" r="10" fill="#1a1b26" stroke="#7dcfff" stroke-width="3" filter="url(#glow)"/>
-    <circle cx="180" cy="320" r="4" fill="#7dcfff">
+    <circle cx="180" cy="320" r="10" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="180" cy="320" r="4" fill="#2563eb">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="0.3s" repeatCount="indefinite"/>
     </circle>
 
     <g transform="translate(220, 282)">
-      <rect x="0" y="0" width="860" height="80" rx="10" fill="#1a1b26" stroke="#7dcfff" stroke-width="1" stroke-opacity="0.4"/>
+      <rect x="0" y="0" width="860" height="80" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" stroke-opacity="0.35" filter="url(#cardShadow)"/>
 
-      <text x="24" y="32" font-size="22" fill="#7dcfff" font-weight="800" filter="url(#glow)">🛠️</text>
-      <text x="56" y="32" font-size="20" fill="#c0caf5" font-weight="700">Senior SysAdmin</text>
-      <text x="56" y="52" font-size="11" fill="#565f89" letter-spacing="2">·  SCALE GROWS</text>
+      <text x="24" y="34" font-size="22" font-weight="800">🛠️</text>
+      <text x="56" y="34" font-size="20" fill="#0f172a" font-weight="700">Senior SysAdmin</text>
+      <text x="56" y="54" font-size="11" fill="#64748b" letter-spacing="2">·  SCALE GROWS</text>
 
-      <text x="420" y="30" font-size="13" fill="#a9b1d6">
-        <tspan fill="#e0af68" font-weight="bold">30,000+</tspan> VPS under management
+      <text x="420" y="32" font-size="13" fill="#334155">
+        <tspan fill="#d97706" font-weight="bold">30,000+</tspan> VPS under management
       </text>
-      <text x="420" y="52" font-size="13" fill="#a9b1d6">
-        <tspan fill="#e0af68" font-weight="bold">5,000+</tspan> bare-metal servers across multiple DCs
+      <text x="420" y="54" font-size="13" fill="#334155">
+        <tspan fill="#d97706" font-weight="bold">5,000+</tspan> bare-metal servers across multiple DCs
       </text>
     </g>
   </g>
@@ -142,29 +144,29 @@
       <animate attributeName="r" values="38;44;38" dur="3s" begin="1s" repeatCount="indefinite"/>
     </circle>
 
-    <rect x="40" y="444" width="88" height="34" rx="17" fill="#1a1b26" stroke="#bb9af7" stroke-width="2"/>
-    <text x="84" y="466" text-anchor="middle" fill="#bb9af7" font-size="16" font-weight="800" letter-spacing="2" filter="url(#glow)">2020</text>
+    <rect x="40" y="444" width="88" height="34" rx="17" fill="#ffffff" stroke="#7c3aed" stroke-width="2" filter="url(#cardShadow)"/>
+    <text x="84" y="466" text-anchor="middle" fill="#7c3aed" font-size="16" font-weight="800" letter-spacing="2">2020</text>
 
-    <circle cx="180" cy="460" r="10" fill="#1a1b26" stroke="#bb9af7" stroke-width="3" filter="url(#glow)"/>
-    <circle cx="180" cy="460" r="4" fill="#bb9af7">
+    <circle cx="180" cy="460" r="10" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+    <circle cx="180" cy="460" r="4" fill="#7c3aed">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="0.6s" repeatCount="indefinite"/>
     </circle>
 
     <g transform="translate(220, 410)">
-      <rect x="0" y="0" width="860" height="100" rx="10" fill="#1a1b26" stroke="#bb9af7" stroke-width="1" stroke-opacity="0.4"/>
+      <rect x="0" y="0" width="860" height="100" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.35" filter="url(#cardShadow)"/>
 
-      <text x="24" y="32" font-size="22" fill="#bb9af7" font-weight="800" filter="url(#glow)">🤖</text>
-      <text x="56" y="32" font-size="20" fill="#c0caf5" font-weight="700">DevOps Engineer</text>
-      <text x="56" y="52" font-size="11" fill="#565f89" letter-spacing="2">·  AUTOMATION ERA</text>
+      <text x="24" y="34" font-size="22" font-weight="800">🤖</text>
+      <text x="56" y="34" font-size="20" fill="#0f172a" font-weight="700">DevOps Engineer</text>
+      <text x="56" y="54" font-size="11" fill="#64748b" letter-spacing="2">·  AUTOMATION ERA</text>
 
-      <text x="420" y="30" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  Infrastructure-as-Code with <tspan fill="#bb9af7" font-weight="bold">Terraform</tspan>
+      <text x="420" y="32" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  Infrastructure-as-Code with <tspan fill="#7c3aed" font-weight="bold">Terraform</tspan>
       </text>
-      <text x="420" y="52" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  Config management: <tspan fill="#EE0000" font-weight="bold">Ansible</tspan> + <tspan fill="#F09820" font-weight="bold">Chef</tspan>
+      <text x="420" y="54" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  Config management: <tspan fill="#dc2626" font-weight="bold">Ansible</tspan> + <tspan fill="#ea580c" font-weight="bold">Chef</tspan>
       </text>
-      <text x="420" y="74" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  CI/CD pipelines · immutable infrastructure
+      <text x="420" y="76" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  CI/CD pipelines · immutable infrastructure
       </text>
     </g>
   </g>
@@ -175,46 +177,46 @@
 
     <!-- Pulsing "NOW" halo -->
     <circle cx="180" cy="620" r="46" fill="url(#nodeGlow4)">
-      <animate attributeName="r" values="42;50;42" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="42;52;42" dur="2s" repeatCount="indefinite"/>
     </circle>
 
-    <rect x="40" y="604" width="88" height="34" rx="17" fill="#9ece6a" stroke="#9ece6a" stroke-width="2">
-      <animate attributeName="fill-opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    <rect x="40" y="604" width="88" height="34" rx="17" fill="#16a34a" stroke="#15803d" stroke-width="2" filter="url(#cardShadow)">
+      <animate attributeName="fill-opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
     </rect>
-    <text x="84" y="626" text-anchor="middle" fill="#0D1117" font-size="16" font-weight="800" letter-spacing="2">2026</text>
+    <text x="84" y="626" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="800" letter-spacing="2">2026</text>
 
-    <circle cx="180" cy="620" r="12" fill="#9ece6a" stroke="#9ece6a" stroke-width="3" filter="url(#softglow)">
+    <circle cx="180" cy="620" r="12" fill="#16a34a" stroke="#15803d" stroke-width="3">
       <animate attributeName="r" values="10;14;10" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="180" cy="620" r="5" fill="#0D1117"/>
+    <circle cx="180" cy="620" r="5" fill="#ffffff"/>
 
     <g transform="translate(220, 570)">
-      <rect x="0" y="0" width="860" height="100" rx="10" fill="#1a1b26" stroke="#9ece6a" stroke-width="1.5" stroke-opacity="0.7"/>
+      <rect x="0" y="0" width="860" height="100" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2" stroke-opacity="0.6" filter="url(#cardShadow)"/>
 
       <!-- "NOW" badge -->
-      <rect x="760" y="14" width="80" height="22" rx="11" fill="#9ece6a"/>
-      <text x="800" y="29" text-anchor="middle" fill="#0D1117" font-size="11" font-weight="800" letter-spacing="3">CURRENT</text>
+      <rect x="760" y="14" width="80" height="22" rx="11" fill="#16a34a"/>
+      <text x="800" y="29" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800" letter-spacing="3">CURRENT</text>
 
-      <text x="24" y="32" font-size="22" fill="#9ece6a" font-weight="800" filter="url(#glow)">🚀</text>
-      <text x="56" y="32" font-size="20" fill="#c0caf5" font-weight="700">Site Reliability Engineer</text>
-      <text x="56" y="52" font-size="11" fill="#565f89" letter-spacing="2">·  MODERN CLOUD-NATIVE</text>
+      <text x="24" y="34" font-size="22" font-weight="800">🚀</text>
+      <text x="56" y="34" font-size="20" fill="#0f172a" font-weight="700">Site Reliability Engineer</text>
+      <text x="56" y="54" font-size="11" fill="#64748b" letter-spacing="2">·  MODERN CLOUD-NATIVE</text>
 
-      <text x="24" y="82" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  Multi-region <tspan fill="#FF9900" font-weight="bold">AWS</tspan> · <tspan fill="#e0af68" font-weight="bold">6 clusters</tspan> · 5 continents
+      <text x="24" y="84" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  Multi-region <tspan fill="#d97706" font-weight="bold">AWS</tspan> · <tspan fill="#d97706" font-weight="bold">6 clusters</tspan> · 5 continents
       </text>
-      <text x="420" y="82" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  <tspan fill="#326CE5" font-weight="bold">Kubernetes</tspan>-native · GitOps
+      <text x="420" y="84" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  <tspan fill="#2563eb" font-weight="bold">Kubernetes</tspan>-native · GitOps
       </text>
-      <text x="720" y="82" font-size="13" fill="#a9b1d6">
-        <tspan fill="#9ece6a">›</tspan>  SLO-driven
+      <text x="720" y="84" font-size="13" fill="#334155">
+        <tspan fill="#16a34a" font-weight="bold">›</tspan>  SLO-driven
       </text>
     </g>
   </g>
 
   <!-- Footer tags -->
   <g opacity="0">
-    <animate attributeName="opacity" from="0" to="0.6" dur="0.8s" begin="2.7s" fill="freeze"/>
-    <text x="600" y="700" text-anchor="middle" font-size="10" fill="#565f89" letter-spacing="5">
+    <animate attributeName="opacity" from="0" to="0.7" dur="0.8s" begin="2.7s" fill="freeze"/>
+    <text x="600" y="700" text-anchor="middle" font-size="10" fill="#64748b" letter-spacing="5" font-weight="600">
       HUNDREDS  →  TENS OF THOUSANDS  →  HUNDREDS OF THOUSANDS OF SERVERS
     </text>
   </g>
