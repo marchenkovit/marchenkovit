@@ -178,7 +178,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## 🏗️ Infrastructure Architecture
 
 <div align="center">
-  <img src="./assets/infrastructure.svg" alt="Infrastructure Architecture: Global users → CloudFlare edge (WAF, DDoS, CDN, Geo-routing) → Multi-region AWS (US primary, EU replica, APAC replica, each with ALB → EKS → RDS) → Observability (Prometheus, Grafana, Loki, Alertmanager) + DR (S3 snapshots, cross-region replication, restore drills) — all managed by Terraform, Ansible, Chef, Git, GitOps" width="100%"/>
+  <img src="./assets/infra.svg" alt="Infrastructure Architecture: Global users → CloudFlare edge (WAF, DDoS, CDN, Geo-routing) → Multi-region AWS (US primary, EU replica, APAC replica, each with ALB → EKS → RDS) → Observability (Prometheus, Grafana, Loki, Alertmanager) + DR (S3 snapshots, cross-region replication, restore drills) — all managed by Terraform, Ansible, Chef, Git, GitOps" width="100%"/>
 </div>
 
 **Design principles I follow:**
