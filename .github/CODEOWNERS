@@ -1,0 +1,24 @@
+# ======================================================================
+# CODEOWNERS — Repository ownership and authorship record
+# ======================================================================
+#
+# Sole owner and copyright holder of every file in this repository:
+#
+#   Vitalii Marchenko <marchenko.vitaliy1@gmail.com>
+#
+# Any pull request that modifies any path below requires approval from
+# the owner. Automated approval or bypass is not permitted.
+#
+# No contribution, derivative work, or redistribution is authorized
+# without explicit written permission — see LICENSE for full terms.
+# ======================================================================
+
+# Global ownership — every file, every path, every branch
+*       @marchenkovit
+
+# README and branding assets (extra sensitivity)
+/README.md          @marchenkovit
+/LICENSE            @marchenkovit
+/NOTICE             @marchenkovit
+/assets/**          @marchenkovit
+/.github/**         @marchenkovit

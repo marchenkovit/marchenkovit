@@ -9,8 +9,14 @@
 [![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 [![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
 [![Profile Views](https://komarev.com/ghpvc/?username=marchenkovit&label=Profile%20views&color=00D9FF&style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-All_Rights_Reserved-b91c1c?style=flat-square)](./LICENSE)
 
 </div>
+
+> [!IMPORTANT]
+> **© 2026 Vitalii Marchenko · All Rights Reserved**
+> This repository is provided for **viewing only**. Forking, cloning, copying, modifying, or redistributing any content (source code, SVG graphics, README, configuration, or design) is **strictly prohibited** without prior written permission from the author.
+> Unauthorized use constitutes a violation of copyright law and will be pursued under applicable legal remedies. See [LICENSE](./LICENSE) for full terms.
 
 ---
 
