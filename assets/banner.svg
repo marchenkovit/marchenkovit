@@ -1,129 +1,155 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" font-family="'Fira Code', 'JetBrains Mono', ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="'Fira Code', 'JetBrains Mono', ui-monospace, monospace">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="50%" stop-color="#1a1b26"/>
-      <stop offset="100%" stop-color="#0D1117"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00D9FF" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
     </linearGradient>
     <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7dcfff"/>
-      <stop offset="50%" stop-color="#00D9FF"/>
-      <stop offset="100%" stop-color="#bb9af7"/>
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="33%" stop-color="#2563eb"/>
+      <stop offset="66%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#16a34a"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
+      <stop offset="33%" stop-color="#2563eb" stop-opacity="0.9"/>
+      <stop offset="66%" stop-color="#7c3aed" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="statGlow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="statGlow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="statGlow3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#16a34a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="statGlow4" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.12"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00D9FF" stroke-opacity="0.06" stroke-width="1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284c7" stroke-opacity="0.05" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="320" fill="url(#bg)"/>
-  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
 
   <!-- Top accent line -->
-  <rect x="0" y="0" width="1200" height="2" fill="url(#accent)">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
   </rect>
-
   <!-- Bottom accent line -->
-  <rect x="0" y="318" width="1200" height="2" fill="url(#accent)">
-    <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
+  <rect x="0" y="357" width="1200" height="3" fill="url(#accent)">
+    <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Left accent -->
-  <line x1="60" y1="60" x2="60" y2="260" stroke="#00D9FF" stroke-width="2" opacity="0.5"/>
-  <circle cx="60" cy="60" r="5" fill="#00D9FF" filter="url(#glow)">
+  <!-- Left vertical accent -->
+  <line x1="60" y1="70" x2="60" y2="290" stroke="url(#nameGrad)" stroke-width="3" opacity="0.7"/>
+  <circle cx="60" cy="70" r="6" fill="#0284c7">
     <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="60" cy="260" r="5" fill="#bb9af7" filter="url(#glow)">
+  <circle cx="60" cy="290" r="6" fill="#16a34a">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
   </circle>
 
+  <!-- Header label -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0s" fill="freeze"/>
+    <text x="90" y="78" fill="#64748b" font-size="13" font-weight="600" letter-spacing="6">PROFILE</text>
+  </g>
+
   <!-- Name -->
-  <text x="90" y="130" fill="url(#nameGrad)" font-size="56" font-weight="800" letter-spacing="-1" filter="url(#glow)">
-    Vitalii Marchenko
-  </text>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.2s" fill="freeze"/>
+    <text x="90" y="150" fill="url(#nameGrad)" font-size="60" font-weight="800" letter-spacing="-1">
+      Vitalii Marchenko
+    </text>
+  </g>
 
   <!-- Role -->
-  <text x="90" y="165" fill="#c0caf5" font-size="20" font-weight="500" letter-spacing="4">
-    SITE RELIABILITY ENGINEER · DEVOPS · 11+ YEARS
-  </text>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.6s" fill="freeze"/>
+    <text x="90" y="188" fill="#334155" font-size="20" font-weight="600" letter-spacing="4">
+      SITE RELIABILITY ENGINEER
+    </text>
+    <text x="508" y="188" fill="#64748b" font-size="20" letter-spacing="3">·</text>
+    <text x="528" y="188" fill="#334155" font-size="20" font-weight="600" letter-spacing="4">DEVOPS</text>
+    <text x="648" y="188" fill="#64748b" font-size="20" letter-spacing="3">·</text>
+    <text x="668" y="188" fill="#334155" font-size="20" font-weight="600" letter-spacing="4">11+ YEARS</text>
+  </g>
 
-  <!-- Stats box -->
-  <g transform="translate(90, 200)">
+  <!-- Stat cards -->
+  <g transform="translate(90, 220)">
 
     <!-- Stat 1: 100K+ VPS -->
-    <g>
-      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#00D9FF" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="100" y="32" fill="#00D9FF" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">100,000+</text>
-      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">VPS MANAGED</text>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1s" fill="freeze"/>
+      <circle cx="105" cy="40" r="52" fill="url(#statGlow1)">
+        <animate attributeName="r" values="50;58;50" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="0" y="0" width="210" height="80" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.4" filter="url(#cardShadow)"/>
+      <text x="105" y="40" fill="#0284c7" font-size="30" font-weight="800" text-anchor="middle">100,000+</text>
+      <text x="105" y="63" fill="#64748b" font-size="11" text-anchor="middle" letter-spacing="3" font-weight="600">VPS MANAGED</text>
     </g>
 
     <!-- Stat 2: 10K+ Dedicated -->
-    <g transform="translate(220, 0)">
-      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#7dcfff" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="100" y="32" fill="#7dcfff" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">10,000+</text>
-      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">DEDICATED SERVERS</text>
+    <g transform="translate(230, 0)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.2s" fill="freeze"/>
+      <circle cx="105" cy="40" r="52" fill="url(#statGlow2)">
+        <animate attributeName="r" values="50;58;50" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="0" y="0" width="210" height="80" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" stroke-opacity="0.4" filter="url(#cardShadow)"/>
+      <text x="105" y="40" fill="#2563eb" font-size="30" font-weight="800" text-anchor="middle">10,000+</text>
+      <text x="105" y="63" fill="#64748b" font-size="11" text-anchor="middle" letter-spacing="3" font-weight="600">DEDICATED SERVERS</text>
     </g>
 
     <!-- Stat 3: 99.9% Uptime -->
-    <g transform="translate(440, 0)">
-      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#9ece6a" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="100" y="32" fill="#9ece6a" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">99.9%+</text>
-      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">UPTIME SLA</text>
+    <g transform="translate(460, 0)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.4s" fill="freeze"/>
+      <circle cx="105" cy="40" r="52" fill="url(#statGlow3)">
+        <animate attributeName="r" values="50;58;50" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="0" y="0" width="210" height="80" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.5" filter="url(#cardShadow)"/>
+      <text x="105" y="40" fill="#16a34a" font-size="30" font-weight="800" text-anchor="middle">99.9%+</text>
+      <text x="105" y="63" fill="#64748b" font-size="11" text-anchor="middle" letter-spacing="3" font-weight="600">UPTIME SLA</text>
     </g>
 
     <!-- Stat 4: Multi-region -->
-    <g transform="translate(660, 0)">
-      <rect x="0" y="0" width="200" height="70" rx="8" fill="#1a1b26" stroke="#bb9af7" stroke-width="1" stroke-opacity="0.5"/>
-      <text x="100" y="32" fill="#bb9af7" font-size="26" font-weight="800" text-anchor="middle" filter="url(#glow)">6</text>
-      <text x="100" y="55" fill="#a9b1d6" font-size="11" text-anchor="middle" letter-spacing="2">AWS REGIONS OPERATED</text>
+    <g transform="translate(690, 0)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.6s" fill="freeze"/>
+      <circle cx="105" cy="40" r="52" fill="url(#statGlow4)">
+        <animate attributeName="r" values="50;58;50" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="0" y="0" width="210" height="80" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.4" filter="url(#cardShadow)"/>
+      <text x="105" y="40" fill="#7c3aed" font-size="30" font-weight="800" text-anchor="middle">6</text>
+      <text x="105" y="63" fill="#64748b" font-size="11" text-anchor="middle" letter-spacing="3" font-weight="600">AWS REGIONS OPERATED</text>
     </g>
 
   </g>
 
-  <!-- Right decoration: terminal prompt -->
-  <g transform="translate(970, 60)" opacity="0.7">
-    <text x="0" y="0" fill="#9ece6a" font-size="12">➜</text>
-    <text x="18" y="0" fill="#7dcfff" font-size="12" font-weight="bold">~/infra</text>
-    <text x="78" y="0" fill="#c0caf5" font-size="12">$ kubectl get pods -A</text>
-    <text x="0" y="22" fill="#565f89" font-size="11">NAMESPACE        PODS</text>
-    <text x="0" y="40" fill="#c0caf5" font-size="11">arbostar         <tspan fill="#9ece6a">Running</tspan></text>
-    <text x="0" y="58" fill="#c0caf5" font-size="11">db-oregon        <tspan fill="#9ece6a">Running</tspan></text>
-    <text x="0" y="76" fill="#c0caf5" font-size="11">prometheus       <tspan fill="#9ece6a">Running</tspan></text>
-    <text x="0" y="94" fill="#c0caf5" font-size="11">logs             <tspan fill="#9ece6a">Running</tspan></text>
-    <text x="0" y="112" fill="#c0caf5" font-size="11">orbiter          <tspan fill="#9ece6a">Running</tspan></text>
-    <text x="0" y="130" fill="#565f89" font-size="11">───────────────</text>
-    <text x="0" y="148" fill="#e0af68" font-size="11">↑ 100% healthy</text>
-    <rect x="115" y="138" width="8" height="13" fill="#c0caf5">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
   <!-- Bottom tags -->
-  <g transform="translate(90, 290)" font-size="11" fill="#565f89" letter-spacing="3">
-    <text>AWS</text>
-    <text x="60">·</text>
-    <text x="80">KUBERNETES</text>
-    <text x="200">·</text>
-    <text x="220">TERRAFORM</text>
-    <text x="340">·</text>
-    <text x="360">ANSIBLE</text>
-    <text x="440">·</text>
-    <text x="460">CHEF</text>
-    <text x="520">·</text>
-    <text x="540">MULTI-REGION</text>
-    <text x="680">·</text>
-    <text x="700">HIGH-LOAD</text>
-    <text x="800">·</text>
-    <text x="820">AUTOMATION</text>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="0.85" dur="0.8s" begin="2s" fill="freeze"/>
+    <text x="600" y="330" text-anchor="middle" font-size="11" fill="#64748b" letter-spacing="5" font-weight="600">
+      AWS  ·  KUBERNETES  ·  TERRAFORM  ·  ANSIBLE  ·  CHEF  ·  MULTI-REGION  ·  HIGH-LOAD  ·  AUTOMATION
+    </text>
   </g>
 </svg>
