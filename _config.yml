@@ -7,7 +7,7 @@ github:
   repository_url: https://github.com/marchenkovit/marchenkovit
   repository_nwo: marchenkovit/marchenkovit
   owner_url: https://github.com/marchenkovit
-  owner_name: marchenkovit
+  owner_name: "Vitalii Marchenko"
 plugins:
   - jekyll-relative-links
   - jekyll-commonmark-ghpages
