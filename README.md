@@ -203,39 +203,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=marchenkovit&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&theme=tokyonight&card_width=420" />
-    <img src="https://github-readme-stats.vercel.app/api?username=marchenkovit&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&card_width=420" alt="GitHub Stats" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=marchenkovit&layout=compact&hide_border=true&langs_count=10&theme=tokyonight" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marchenkovit&layout=compact&hide_border=true&langs_count=10" alt="Top Languages" />
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=marchenkovit&hide_border=true&theme=tokyonight" />
-    <img src="https://streak-stats.demolab.com/?user=marchenkovit&hide_border=true" alt="GitHub Streak" />
-  </picture>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=marchenkovit&theme=flat&no-frame=true&no-bg=true&row=1&column=8&margin-w=6" alt="GitHub Trophies" />
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=marchenkovit&theme=tokyo-night&hide_border=true&area=true&hide_title=true" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=marchenkovit&theme=minimal&hide_border=true&area=true&hide_title=true" alt="Activity Graph" width="100%" />
-  </picture>
-</div>
-
----
-
 ## 🐍 Contribution Activity
 
 <div align="center">
