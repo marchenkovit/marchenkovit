@@ -1,0 +1,23 @@
+title: "Vitalii Marchenko · DevOps / SRE"
+description: "Site Reliability Engineer · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · multi-region AWS"
+theme: jekyll-theme-cayman
+show_downloads: true
+github:
+  is_project_page: true
+  repository_url: https://github.com/marchenkovit/marchenkovit
+  repository_nwo: marchenkovit/marchenkovit
+  owner_url: https://github.com/marchenkovit
+  owner_name: marchenkovit
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+exclude:
+  - LICENSE
+  - NOTICE
+  - SECURITY.md
+  - CODEOWNERS
+  - .github
