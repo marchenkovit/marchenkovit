@@ -181,6 +181,15 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
+## 📜 Certifications
+
+| | Course | Provider | Date | Score | Verify |
+| :---: | --- | :---: | :---: | :---: | :---: |
+| 🐧 | **Linux System Administration** | ITEA Academy | Jul 2023 | ![Score](https://img.shields.io/badge/100%2F100-22C55E?style=flat-square) | [№ 4020425002](./assets/certs/itea-linux-system-administration.pdf) |
+| ⚙️ | **DevOps** | ITEA Academy | Dec 2023 | ![Score](https://img.shields.io/badge/87%2F100-22C55E?style=flat-square) | [№ 4010324007](./assets/certs/itea-devops.pdf) |
+
+---
+
 ## 🏗️ Infrastructure Architecture
 
 <div align="center">
