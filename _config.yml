@@ -13,6 +13,14 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+  parse_span_html: true
+  hard_wrap: false
+  syntax_highlighter: rouge
 include:
   - README.md
 exclude:
