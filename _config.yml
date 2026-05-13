@@ -10,17 +10,23 @@ github:
   owner_name: marchenkovit
 plugins:
   - jekyll-relative-links
+  - jekyll-commonmark-ghpages
 relative_links:
   enabled: true
   collections: true
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  parse_block_html: true
-  parse_span_html: true
-  hard_wrap: false
-  syntax_highlighter: rouge
+markdown: CommonMarkGhPages
+commonmark:
+  options:
+    - UNSAFE
+    - SMART
+    - GFM_QUIRKS
+  extensions:
+    - strikethrough
+    - autolink
+    - table
+    - tagfilter
+    - tasklist
 include:
   - README.md
 exclude:
