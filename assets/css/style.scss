@@ -82,6 +82,21 @@
   padding: 0.6rem 1rem;
 }
 
+/* === CLS guard: reserve vertical space for external badge images before they load === */
+.main-content img[src*="img.shields.io"],
+.main-content img[src*="komarev.com"] {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Snake animation: SVG from Platane/snk is 882×198 — reserve aspect ratio */
+.main-content img[src*="github-contribution-grid-snake"] {
+  aspect-ratio: 882 / 198;
+  width: 100%;
+  height: auto;
+}
+
 /* === Responsive: tablet === */
 @media (max-width: 1024px) {
   .page-header {

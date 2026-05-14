@@ -172,64 +172,82 @@
 @media (max-width: 1280px) { #page-toc { display: none; } }
 </style>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var content = document.getElementById('content');
-  if (!content) return;
-  var headings = content.querySelectorAll('h2');
-  if (headings.length < 3) return;
-  var toc = document.createElement('nav');
-  toc.id = 'page-toc';
-  toc.setAttribute('aria-label', 'Table of contents');
-  toc.innerHTML = '<strong>On this page</strong><ul></ul>';
-  var ul = toc.querySelector('ul');
-  headings.forEach(function (h, i) {
-    if (!h.id) {
-      h.id = 'sec-' + h.textContent.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '') || ('sec-' + i);
-    }
-    var li = document.createElement('li');
-    var a = document.createElement('a');
-    var text = h.textContent.replace(/^[\s\W_]+/, '').trim();
-    if (text === 'Contribution Activity') {
-      a.href = '/assets/CV_Vitalii_Marchenko.pdf';
-      a.setAttribute('download', '');
-      a.textContent = '📄 Download CV';
-    } else {
-      a.href = '#' + h.id;
-      a.textContent = text;
-    }
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
-  document.body.appendChild(toc);
-});
+(function () {
+  var idle = window.requestIdleCallback || function (cb) { return setTimeout(cb, 250); };
+  function buildToc() {
+    var content = document.getElementById('content');
+    if (!content) return;
+    var headings = content.querySelectorAll('h2');
+    if (headings.length < 3) return;
+    var toc = document.createElement('nav');
+    toc.id = 'page-toc';
+    toc.setAttribute('aria-label', 'Table of contents');
+    toc.innerHTML = '<strong>On this page</strong><ul></ul>';
+    var ul = toc.querySelector('ul');
+    var frag = document.createDocumentFragment();
+    headings.forEach(function (h, i) {
+      if (!h.id) {
+        h.id = 'sec-' + (h.textContent.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '') || ('sec-' + i));
+      }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      var text = h.textContent.replace(/^[\s\W_]+/, '').trim();
+      if (text === 'Contribution Activity') {
+        a.href = '/assets/CV_Vitalii_Marchenko.pdf';
+        a.setAttribute('download', '');
+        a.textContent = '📄 Download CV';
+      } else {
+        a.href = '#' + h.id;
+        a.textContent = text;
+      }
+      li.appendChild(a);
+      frag.appendChild(li);
+    });
+    ul.appendChild(frag);
+    document.body.appendChild(toc);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { idle(buildToc, { timeout: 2000 }); });
+  } else {
+    idle(buildToc, { timeout: 2000 });
+  }
+})();
 </script>
 
 <!-- Mermaid diagram support: lazy-loaded only when a mermaid block exists on the page -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  if (!document.querySelector('pre > code.language-mermaid, .mermaid')) return;
-  import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs').then(function (m) {
-    var mermaid = m.default;
-    mermaid.initialize({
-      startOnLoad: false,
-      theme: 'base',
-      themeVariables: {
-        primaryColor: '#0d9488',
-        primaryTextColor: '#0f172a',
-        primaryBorderColor: '#0d9488',
-        lineColor: '#475569',
-        secondaryColor: '#e0f2f1',
-        tertiaryColor: '#f1f5f9'
-      },
-      securityLevel: 'loose'
+(function () {
+  var idle = window.requestIdleCallback || function (cb) { return setTimeout(cb, 500); };
+  function loadMermaid() {
+    if (!document.querySelector('pre > code.language-mermaid, .mermaid')) return;
+    import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs').then(function (m) {
+      var mermaid = m.default;
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'base',
+        themeVariables: {
+          primaryColor: '#0d9488',
+          primaryTextColor: '#0f172a',
+          primaryBorderColor: '#0d9488',
+          lineColor: '#475569',
+          secondaryColor: '#e0f2f1',
+          tertiaryColor: '#f1f5f9'
+        },
+        securityLevel: 'loose'
+      });
+      document.querySelectorAll('pre > code.language-mermaid').forEach(function (el) {
+        var div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = el.textContent;
+        el.parentElement.replaceWith(div);
+      });
+      mermaid.run({ querySelector: '.mermaid' });
     });
-    document.querySelectorAll('pre > code.language-mermaid').forEach(function (el) {
-      var div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = el.textContent;
-      el.parentElement.replaceWith(div);
-    });
-    mermaid.run({ querySelector: '.mermaid' });
-  });
-});
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { idle(loadMermaid, { timeout: 3000 }); });
+  } else {
+    idle(loadMermaid, { timeout: 3000 });
+  }
+})();
 </script>
