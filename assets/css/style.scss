@@ -3,6 +3,19 @@
 
 @import "{{ site.theme }}";
 
+/* === System font stack (replaces Google Open Sans — zero external requests) ===
+   Uses each OS's native UI font for instant first paint and perfect rendering. */
+$sys-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+
+body,
+.main-content,
+.project-name,
+.project-tagline,
+.btn,
+.site-footer {
+  font-family: $sys-font;
+}
+
 /* === Brand recolor: match the dark slate + teal palette of hero.svg / og-image === */
 
 .page-header {
@@ -104,7 +117,7 @@
   padding: 4px 9px;
   margin: 2px 1px;
   border-radius: 3px;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: $sys-font;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.4;
@@ -134,7 +147,7 @@
   padding: 6px 12px;
   margin: 3px;
   border-radius: 4px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: $sys-font;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
