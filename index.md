@@ -10,7 +10,7 @@ description: "Site Reliability Engineer · 11+ years · 100,000+ VPS · 10,000+ 
 
 <div align="center" class="contact-strip">
 <a class="cpill" style="background:#D14836" href="mailto:marchenko.vitaliy1@gmail.com">✉ marchenko.vitaliy1@gmail.com</a>
-<a class="cpill" style="background:#2CA5E0" href="https://t.me/m_a_r_c_h_e_n_k_o">✈ @m_a_r_c_h_e_n_k_o</a>
+<a class="cpill cpill-light" style="background:#2CA5E0" href="https://t.me/m_a_r_c_h_e_n_k_o">✈ @m_a_r_c_h_e_n_k_o</a>
 <span class="cpill cpill-light" style="background:#FFD700">📍 Ukraine</span>
 <a class="cpill" style="background:#b91c1c" href="./LICENSE">© All Rights Reserved</a>
 </div>
@@ -98,12 +98,12 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 <div class="tech-group">
 <h3>☁️ Cloud &amp; Infrastructure</h3>
-<span class="pill" style="background:#232F3E">AWS</span><span class="pill" style="background:#FF9900">Amazon EKS</span><span class="pill" style="background:#D50C2D">Hetzner</span><span class="pill" style="background:#F38020">CloudFlare</span><span class="pill" style="background:#0080FF">DigitalOcean</span><span class="pill" style="background:#E57000">Proxmox</span>
+<span class="pill" style="background:#232F3E">AWS</span><span class="pill pill-dark" style="background:#FF9900">Amazon EKS</span><span class="pill" style="background:#D50C2D">Hetzner</span><span class="pill pill-dark" style="background:#F38020">CloudFlare</span><span class="pill" style="background:#0080FF">DigitalOcean</span><span class="pill pill-dark" style="background:#E57000">Proxmox</span>
 </div>
 
 <div class="tech-group">
 <h3>🔧 Infrastructure as Code</h3>
-<span class="pill" style="background:#7B42BC">Terraform</span><span class="pill" style="background:#EE0000">Ansible</span><span class="pill" style="background:#F09820">Chef</span>
+<span class="pill" style="background:#7B42BC">Terraform</span><span class="pill" style="background:#EE0000">Ansible</span><span class="pill pill-dark" style="background:#F09820">Chef</span>
 </div>
 
 <div class="tech-group">
@@ -118,17 +118,17 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 <div class="tech-group">
 <h3>🚀 CI/CD &amp; Automation</h3>
-<span class="pill" style="background:#FC6D26">GitLab CI</span><span class="pill" style="background:#2088FF">GitHub Actions</span><span class="pill" style="background:#D24939">Jenkins</span><span class="pill" style="background:#EA4B71">n8n</span>
+<span class="pill pill-dark" style="background:#FC6D26">GitLab CI</span><span class="pill" style="background:#2088FF">GitHub Actions</span><span class="pill" style="background:#D24939">Jenkins</span><span class="pill pill-dark" style="background:#EA4B71">n8n</span>
 </div>
 
 <div class="tech-group">
 <h3>📊 Observability &amp; Storage</h3>
-<span class="pill" style="background:#E6522C">Prometheus</span><span class="pill" style="background:#F46800">Grafana</span><span class="pill" style="background:#F5A623">Loki</span><span class="pill" style="background:#D40000">Zabbix</span><span class="pill" style="background:#005571">ELK Stack</span><span class="pill" style="background:#01579B">Graylog</span><span class="pill" style="background:#4479A1">MySQL</span><span class="pill" style="background:#003545">MariaDB</span><span class="pill" style="background:#336791">PostgreSQL</span><span class="pill" style="background:#DC382D">Redis</span>
+<span class="pill" style="background:#E6522C">Prometheus</span><span class="pill pill-dark" style="background:#F46800">Grafana</span><span class="pill pill-dark" style="background:#F5A623">Loki</span><span class="pill" style="background:#D40000">Zabbix</span><span class="pill" style="background:#005571">ELK Stack</span><span class="pill" style="background:#01579B">Graylog</span><span class="pill" style="background:#4479A1">MySQL</span><span class="pill" style="background:#003545">MariaDB</span><span class="pill" style="background:#336791">PostgreSQL</span><span class="pill" style="background:#DC382D">Redis</span>
 </div>
 
 <div class="tech-group">
 <h3>🌐 Networking &amp; VPN</h3>
-<span class="pill" style="background:#009639">Nginx</span><span class="pill" style="background:#106DA9">HAProxy</span><span class="pill" style="background:#EA7E20">OpenVPN</span><span class="pill" style="background:#88171A">WireGuard</span><span class="pill" style="background:#1E90FF">IKEv2/IPsec</span><span class="pill" style="background:#E30613">strongSwan</span><span class="pill" style="background:#4B8BBE">L2TP</span><span class="pill" style="background:#00A4EF">SoftEther</span><span class="pill" style="background:#0080C0">OpenConnect</span><span class="pill" style="background:#0075C2">Shadowsocks</span><span class="pill" style="background:#705FD7">V2Ray/Xray</span><span class="pill" style="background:#222222">Trojan-GFW</span><span class="pill" style="background:#5A6C80">SOCKS5</span>
+<span class="pill" style="background:#009639">Nginx</span><span class="pill" style="background:#106DA9">HAProxy</span><span class="pill pill-dark" style="background:#EA7E20">OpenVPN</span><span class="pill" style="background:#88171A">WireGuard</span><span class="pill" style="background:#1E90FF">IKEv2/IPsec</span><span class="pill" style="background:#E30613">strongSwan</span><span class="pill" style="background:#4B8BBE">L2TP</span><span class="pill pill-dark" style="background:#00A4EF">SoftEther</span><span class="pill" style="background:#0080C0">OpenConnect</span><span class="pill" style="background:#0075C2">Shadowsocks</span><span class="pill" style="background:#705FD7">V2Ray/Xray</span><span class="pill" style="background:#222222">Trojan-GFW</span><span class="pill" style="background:#5A6C80">SOCKS5</span>
 </div>
 
 <div class="tech-group">
@@ -143,7 +143,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 <div class="tech-group">
 <h3>🧑‍💻 Application Runtimes I Operate in Production</h3>
-<span class="pill" style="background:#777BB4">PHP</span><span class="pill" style="background:#FF2D20">Laravel</span><span class="pill" style="background:#339933">Node.js</span><span class="pill" style="background:#000000">Express</span><span class="pill" style="background:#4F5B93">PHP-FPM</span><span class="pill" style="background:#4285F4">Headless Chromium</span><span class="pill" style="background:#F22F46">Twilio</span><span class="pill" style="background:#F06B66">Mailgun</span><span class="pill" style="background:#DD344C">AWS SES</span>
+<span class="pill" style="background:#777BB4">PHP</span><span class="pill" style="background:#FF2D20">Laravel</span><span class="pill" style="background:#339933">Node.js</span><span class="pill" style="background:#000000">Express</span><span class="pill" style="background:#4F5B93">PHP-FPM</span><span class="pill" style="background:#4285F4">Headless Chromium</span><span class="pill" style="background:#F22F46">Twilio</span><span class="pill pill-dark" style="background:#F06B66">Mailgun</span><span class="pill" style="background:#DD344C">AWS SES</span>
 </div>
 
 ---

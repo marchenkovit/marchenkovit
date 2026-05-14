@@ -71,10 +71,20 @@ body,
 }
 
 .main-content a {
-  color: #0d9488;
+  color: #0c7268;
 }
 .main-content a:hover {
-  color: #0f766e;
+  color: #064e44;
+}
+
+/* === A11y: body links underlined so they're distinguishable without color === */
+.main-content a:not(.pill):not(.cpill):not(.btn) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.main-content a:not(.pill):not(.cpill):not(.btn):hover {
+  text-decoration-thickness: 2px;
 }
 
 .main-content a img {
