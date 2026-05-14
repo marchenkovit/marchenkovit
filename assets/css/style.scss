@@ -81,3 +81,108 @@
   border-left-color: #0d9488;
   padding: 0.6rem 1rem;
 }
+
+/* === Responsive: tablet === */
+@media (max-width: 1024px) {
+  .page-header {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+}
+
+/* === Responsive: mobile (≤ 720px) === */
+@media (max-width: 720px) {
+  /* Tighter header padding on small screens */
+  .page-header {
+    padding: 2rem 1rem 2.25rem;
+  }
+  .project-name {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    line-height: 1.15;
+  }
+  .project-tagline {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+  .page-header .btn {
+    margin: 0.35rem 0.2rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.85rem;
+    width: auto;
+  }
+
+  /* Tighter content padding */
+  .main-content {
+    padding: 1.5rem 1rem !important;
+    font-size: 0.95rem;
+  }
+  .main-content h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+  .main-content h3 {
+    font-size: 1.1rem;
+  }
+
+  /* LAYOUT tables (Tech Stack, Recent Engagements, Open Source) → stack vertically.
+     They're marked by `td[valign="top"]` — data tables (markdown) don't have this attribute. */
+  .main-content table {
+    display: block;
+    width: 100%;
+  }
+  .main-content table tbody,
+  .main-content table tr {
+    display: block;
+    width: 100%;
+  }
+  .main-content table td[valign="top"] {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    border-top: 1px solid #e2e8f0;
+  }
+  .main-content table td[valign="top"]:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  /* DATA tables (markdown — Key Achievements, Certifications) → horizontal scroll */
+  .main-content table:not(:has(td[valign="top"])) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  /* All images shrink to viewport */
+  .main-content img,
+  .main-content picture img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Mermaid diagrams scroll on overflow */
+  .mermaid {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* === Responsive: extra-small (≤ 480px) === */
+@media (max-width: 480px) {
+  .page-header {
+    padding: 1.5rem 0.75rem 1.75rem;
+  }
+  .page-header .btn {
+    display: block;
+    margin: 0.4rem auto;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+  .main-content {
+    padding: 1.25rem 0.85rem !important;
+    font-size: 0.92rem;
+  }
+}
