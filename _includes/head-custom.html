@@ -101,73 +101,7 @@
 }
 </script>
 
-<!-- Print-friendly stylesheet (Cmd+P → clean PDF without Cayman header) -->
-<style>
-@media print {
-  .page-header { background: none !important; color: #000 !important; padding: 1rem 0 !important; border-bottom: 2px solid #ddd; box-shadow: none !important; }
-  .page-header .btn { display: none !important; }
-  .project-name { color: #000 !important; }
-  .project-tagline { color: #444 !important; }
-  .site-footer { display: none !important; }
-  body { background: #fff !important; color: #000 !important; }
-  .main-content { color: #000 !important; }
-  .main-content img, .main-content picture { max-width: 70% !important; height: auto !important; page-break-inside: avoid; }
-  .main-content table { page-break-inside: avoid; }
-  .main-content h2, .main-content h3 { page-break-after: avoid; }
-  .main-content a { color: #000 !important; text-decoration: none !important; }
-  .main-content a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #666; word-break: break-all; }
-  #page-toc { display: none !important; }
-}
-</style>
-
-<!-- Floating Table of Contents (auto-built from h2 headings) -->
-<style>
-#page-toc {
-  position: fixed;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.97);
-  border: 1px solid #e2e8f0;
-  padding: 14px 20px 14px 18px;
-  border-radius: 8px;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
-  max-width: 240px;
-  max-height: 70vh;
-  overflow-y: auto;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-}
-#page-toc strong {
-  display: block;
-  margin-bottom: 10px;
-  color: #157878;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-weight: 700;
-}
-#page-toc ul { list-style: none; padding: 0; margin: 0; }
-#page-toc li { margin: 5px 0; }
-#page-toc a {
-  color: #475569;
-  text-decoration: none;
-  display: block;
-  padding: 2px 0;
-  border-left: 2px solid transparent;
-  padding-left: 8px;
-  margin-left: -8px;
-  transition: all 0.15s ease;
-}
-#page-toc a:hover {
-  color: #157878;
-  border-left-color: #157878;
-  background: #f0fdfa;
-}
-@media (max-width: 1280px) { #page-toc { display: none; } }
-</style>
+<!-- Floating Table of Contents (auto-built from h2 headings, styles in critical-css.html) -->
 <script>
 (function () {
   var idle = window.requestIdleCallback || function (cb) { return setTimeout(cb, 250); };
