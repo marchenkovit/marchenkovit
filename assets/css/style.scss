@@ -1,0 +1,83 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* === Brand recolor: match the dark slate + teal palette of hero.svg / og-image === */
+
+.page-header {
+  background-color: #0f172a;
+  background-image: linear-gradient(120deg, #0f172a 0%, #1e293b 55%, #157878 100%);
+  position: relative;
+  padding: 4rem 1rem 4.5rem;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #5eead4 50%, transparent);
+  opacity: 0.6;
+}
+
+.project-name {
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.project-tagline {
+  color: #cbd5e1;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.btn {
+  color: #5eead4;
+  border-color: rgba(94, 234, 212, 0.5);
+  background: rgba(15, 23, 42, 0.35);
+  font-weight: 500;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+  color: #ffffff;
+  border-color: #5eead4;
+  background: rgba(94, 234, 212, 0.18);
+}
+
+/* === Body content === */
+
+.main-content h1,
+.main-content h2 {
+  color: #0d9488;
+}
+
+.main-content h3 {
+  color: #155e75;
+}
+
+.main-content a {
+  color: #0d9488;
+}
+.main-content a:hover {
+  color: #0f766e;
+}
+
+.main-content a img {
+  opacity: 1;
+}
+
+.site-footer {
+  border-top-color: #e2e8f0;
+}
+.site-footer-owner a,
+.site-footer-credits a {
+  color: #0d9488;
+}
+
+/* === GitHub-style alert boxes (rendered by CommonMarkGhPages for > [!IMPORTANT]) === */
+.main-content blockquote.markdown-alert {
+  border-left-color: #0d9488;
+  padding: 0.6rem 1rem;
+}

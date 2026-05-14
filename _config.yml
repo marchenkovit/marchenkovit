@@ -11,6 +11,21 @@ github:
 plugins:
   - jekyll-relative-links
   - jekyll-commonmark-ghpages
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+url: "https://marchenko.work"
+permalink: /:path/
+
+defaults:
+  - scope:
+      path: "assets/certs"
+    values:
+      sitemap: false
+  - scope:
+      path: "assets/CV_Vitalii_Marchenko.pdf"
+    values:
+      sitemap: false
 relative_links:
   enabled: true
   collections: true
