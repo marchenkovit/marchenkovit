@@ -196,3 +196,30 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.appendChild(toc);
 });
 </script>
+
+<!-- Mermaid diagram support: ```mermaid fenced blocks rendered client-side -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#0d9488',
+      primaryTextColor: '#0f172a',
+      primaryBorderColor: '#0d9488',
+      lineColor: '#475569',
+      secondaryColor: '#e0f2f1',
+      tertiaryColor: '#f1f5f9'
+    },
+    securityLevel: 'loose'
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('pre > code.language-mermaid').forEach(function (el) {
+      var div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      el.parentElement.replaceWith(div);
+    });
+    mermaid.run({ querySelector: '.mermaid' });
+  });
+</script>
