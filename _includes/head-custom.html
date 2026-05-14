@@ -181,8 +181,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     var li = document.createElement('li');
     var a = document.createElement('a');
-    a.href = '#' + h.id;
-    a.textContent = h.textContent.replace(/^[\s\W_]+/, '').trim();
+    var text = h.textContent.replace(/^[\s\W_]+/, '').trim();
+    if (text === 'Contribution Activity') {
+      a.href = '/assets/CV_Vitalii_Marchenko.pdf';
+      a.setAttribute('download', '');
+      a.textContent = '📄 Download CV';
+    } else {
+      a.href = '#' + h.id;
+      a.textContent = text;
+    }
     li.appendChild(a);
     ul.appendChild(li);
   });
