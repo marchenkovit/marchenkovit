@@ -1,7 +1,7 @@
 title: "Vitalii Marchenko · DevOps / SRE"
 description: "Site Reliability Engineer · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · multi-region AWS"
 theme: jekyll-theme-cayman
-show_downloads: true
+show_downloads: false
 github:
   is_project_page: true
   repository_url: https://github.com/marchenkovit/marchenkovit
