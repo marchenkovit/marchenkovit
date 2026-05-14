@@ -1,6 +1,6 @@
 <!-- ======================= HERO BANNER ======================= -->
 <div align="center">
-  <img src="./assets/hero.svg" alt="Vitalii Marchenko — Site Reliability Engineer · DevOps · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · 6 AWS regions" width="100%"/>
+  <img src="./assets/hero.svg" alt="Vitalii Marchenko — Site Reliability Engineer · DevOps · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · 6 AWS regions" width="1200" height="380" fetchpriority="high" decoding="async" style="max-width:100%;height:auto"/>
 </div>
 
 <div align="center">
@@ -46,7 +46,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## 📈 Career Timeline
 
 <div align="center">
-  <img src="./assets/career.svg" alt="Career Timeline: SysAdmin (2014) → SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2025 → present)" width="100%"/>
+  <img src="./assets/career.svg" alt="Career Timeline: SysAdmin (2014) → SysAdmin (2017) → DevOps Engineer (2020) → Site Reliability Engineer (2025 → present)" width="1200" height="860" loading="lazy" decoding="async" style="max-width:100%;height:auto"/>
 </div>
 
 ---
@@ -237,7 +237,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## 🏗️ Infrastructure Architecture
 
 <div align="center">
-  <img src="./assets/infra.svg" alt="Infrastructure Architecture: Global users → CloudFlare edge (WAF, DDoS, CDN, Geo-routing) → Multi-region AWS (US primary, EU replica, APAC replica, each with ALB → EKS → RDS) → Observability (Prometheus, Grafana, Loki, Alertmanager) + DR (S3 snapshots, cross-region replication, restore drills) — all managed by Terraform, Ansible, Chef, Git, GitOps" width="100%"/>
+  <img src="./assets/infra.svg" alt="Infrastructure Architecture: Global users → CloudFlare edge (WAF, DDoS, CDN, Geo-routing) → Multi-region AWS (US primary, EU replica, APAC replica, each with ALB → EKS → RDS) → Observability (Prometheus, Grafana, Loki, Alertmanager) + DR (S3 snapshots, cross-region replication, restore drills) — all managed by Terraform, Ansible, Chef, Git, GitOps" width="1200" height="880" loading="lazy" decoding="async" style="max-width:100%;height:auto"/>
 </div>
 
 **Design principles I follow:**
@@ -251,7 +251,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ## ⚡ Daily Workflow
 
 <div align="center">
-  <img src="./assets/workflow.svg" alt="Terminal workflow: kubectl apply → kubectl get pods → ansible-playbook" width="90%"/>
+  <img src="./assets/workflow.svg" alt="Terminal workflow: kubectl apply → kubectl get pods → ansible-playbook" width="900" height="500" loading="lazy" decoding="async" style="max-width:90%;height:auto"/>
 </div>
 
 ---

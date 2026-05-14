@@ -1,3 +1,10 @@
+<!-- Performance: preload LCP hero, preconnect to badge CDNs used in markdown -->
+<link rel="preload" as="image" href="{{ '/assets/hero.svg' | relative_url }}" fetchpriority="high">
+<link rel="preconnect" href="https://img.shields.io" crossorigin>
+<link rel="dns-prefetch" href="https://img.shields.io">
+<link rel="dns-prefetch" href="https://komarev.com">
+<link rel="dns-prefetch" href="https://raw.githubusercontent.com">
+
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
 <link rel="mask-icon" href="{{ '/assets/favicon.svg' | relative_url }}" color="#157878">
@@ -197,23 +204,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<!-- Mermaid diagram support: ```mermaid fenced blocks rendered client-side -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({
-    startOnLoad: false,
-    theme: 'base',
-    themeVariables: {
-      primaryColor: '#0d9488',
-      primaryTextColor: '#0f172a',
-      primaryBorderColor: '#0d9488',
-      lineColor: '#475569',
-      secondaryColor: '#e0f2f1',
-      tertiaryColor: '#f1f5f9'
-    },
-    securityLevel: 'loose'
-  });
-  document.addEventListener('DOMContentLoaded', function () {
+<!-- Mermaid diagram support: lazy-loaded only when a mermaid block exists on the page -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (!document.querySelector('pre > code.language-mermaid, .mermaid')) return;
+  import('https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs').then(function (m) {
+    var mermaid = m.default;
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#0d9488',
+        primaryTextColor: '#0f172a',
+        primaryBorderColor: '#0d9488',
+        lineColor: '#475569',
+        secondaryColor: '#e0f2f1',
+        tertiaryColor: '#f1f5f9'
+      },
+      securityLevel: 'loose'
+    });
     document.querySelectorAll('pre > code.language-mermaid').forEach(function (el) {
       var div = document.createElement('div');
       div.className = 'mermaid';
@@ -222,4 +231,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     mermaid.run({ querySelector: '.mermaid' });
   });
+});
 </script>
