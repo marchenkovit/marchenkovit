@@ -304,17 +304,25 @@ body,
     gap: 0.75rem;
   }
 
-  /* LAYOUT tables (Tech Stack, Recent Engagements, Open Source) → stack vertically.
-     They're marked by `td[valign="top"]` — data tables (markdown) don't have this attribute. */
+  /* Tables on mobile: responsive block container with horizontal scroll fallback.
+     Cells wrap naturally — no nowrap (was causing markdown tables to overflow viewport). */
   .main-content table {
     display: block;
     width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-  .main-content table tbody,
-  .main-content table tr {
-    display: block;
-    width: 100%;
+  .main-content table th,
+  .main-content table td {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
+
+  /* Layout tables (cells use valign="top"): collapse cells into a vertical stack.
+     This is a no-op on Pages now (all layout sections are CSS grid divs) but kept
+     for any future HTML tables with this attribute. */
   .main-content table td[valign="top"] {
     display: block;
     width: 100% !important;
@@ -325,14 +333,6 @@ body,
   .main-content table td[valign="top"]:first-child {
     border-top: none;
     padding-top: 0;
-  }
-
-  /* DATA tables (markdown — Key Achievements, Certifications) → horizontal scroll */
-  .main-content table:not(:has(td[valign="top"])) {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
   }
 
   /* All images shrink to viewport */
