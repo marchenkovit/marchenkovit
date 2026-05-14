@@ -1,6 +1,6 @@
 title: "Vitalii Marchenko · DevOps / SRE"
 description: "Site Reliability Engineer · 11+ years · 100,000+ VPS · 10,000+ dedicated servers · 99.9%+ uptime · multi-region AWS"
-theme: jekyll-theme-cayman
+# No Jekyll theme — all CSS inlined via _includes/critical-css.html (zero render-blocking).
 show_downloads: false
 github:
   is_project_page: true
