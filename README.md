@@ -275,7 +275,7 @@ One-command macOS development environment restore — Homebrew packages, casks, 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub Snake animation" src="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Snake animation" src="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" width="882" height="198" loading="lazy" decoding="async" style="max-width:100%;height:auto" />
   </picture>
 </div>
 
