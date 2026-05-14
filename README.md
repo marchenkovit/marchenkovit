@@ -13,13 +13,6 @@
 
 </div>
 
-> [!IMPORTANT]
-> **© 2026 Vitalii Marchenko · All Rights Reserved**
-> This repository is provided for **viewing only**. Forking, cloning, copying, modifying, or redistributing any content (source code, SVG graphics, README, configuration, or design) is **strictly prohibited** without prior written permission from the author.
-> Unauthorized use constitutes a violation of copyright law and will be pursued under applicable legal remedies. See [LICENSE](./LICENSE) for full terms.
-
----
-
 ## 👨‍💻 About Me
 
 Site Reliability Engineer / DevOps with **11+ years** of hands-on experience operating and automating high-load, mission-critical infrastructure at scale.
@@ -285,3 +278,10 @@ One-command macOS development environment restore — Homebrew packages, casks, 
     <img alt="GitHub Snake animation" src="https://raw.githubusercontent.com/marchenkovit/marchenkovit/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
+
+---
+
+> [!IMPORTANT]
+> **© 2026 Vitalii Marchenko · All Rights Reserved**
+> This repository is provided for **viewing only**. Forking, cloning, copying, modifying, or redistributing any content (source code, SVG graphics, README, configuration, or design) is **strictly prohibited** without prior written permission from the author.
+> Unauthorized use constitutes a violation of copyright law and will be pursued under applicable legal remedies. See [LICENSE](./LICENSE) for full terms.
