@@ -42,8 +42,6 @@ commonmark:
     - table
     - tagfilter
     - tasklist
-include:
-  - README.md
 exclude:
   - LICENSE
   - NOTICE
