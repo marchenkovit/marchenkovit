@@ -8,7 +8,6 @@
 [![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
 [![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
-[![Profile Views](https://komarev.com/ghpvc/?username=marchenkovit&label=Profile%20views&color=00D9FF&style=flat-square)](#)
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-b91c1c?style=flat-square)](./LICENSE)
 
 </div>
@@ -132,6 +131,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)
 ![CentOS](https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white)
+![AlmaLinux](https://img.shields.io/badge/AlmaLinux-0A6121?style=flat-square&logo=almalinux&logoColor=white)
 
   </td>
   <td valign="top">
@@ -152,7 +152,10 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Loki](https://img.shields.io/badge/Loki-F5A623?style=flat-square&logo=grafana&logoColor=white)
 ![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+![ELK Stack](https://img.shields.io/badge/ELK_Stack-005571?style=flat-square&logo=elastic&logoColor=white)
+![Graylog](https://img.shields.io/badge/Graylog-01579B?style=flat-square&logo=graylog&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
@@ -203,7 +206,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 **🧑‍💻 Application Runtimes I Operate in Production**
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel_8-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 ![PHP-FPM](https://img.shields.io/badge/PHP--FPM-4F5B93?style=flat-square&logo=php&logoColor=white)
