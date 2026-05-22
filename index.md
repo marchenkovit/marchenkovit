@@ -12,7 +12,7 @@ description: "Site Reliability Engineer · 11+ years · 100,000+ VPS · 10,000+ 
 <a class="cpill" style="background:#D14836" href="mailto:marchenko.vitaliy1@gmail.com">✉ marchenko.vitaliy1@gmail.com</a>
 <a class="cpill cpill-light" style="background:#2CA5E0" href="https://t.me/m_a_r_c_h_e_n_k_o">✈ @m_a_r_c_h_e_n_k_o</a>
 <span class="cpill cpill-light" style="background:#FFD700">📍 Ukraine</span>
-<a class="cpill" style="background:#b91c1c" href="https://github.com/marchenkovit/marchenkovit/blob/main/LICENSE">© All Rights Reserved</a>
+<a class="cpill" style="background:#b91c1c" href="{{ site.github.repository_url }}/blob/main/LICENSE">© All Rights Reserved</a>
 </div>
 
 ---
@@ -223,5 +223,5 @@ One-command macOS development environment restore — Homebrew packages, casks, 
 <blockquote class="markdown-alert-important" role="note" aria-label="Important">
 <p><strong>© 2026 Vitalii Marchenko · All Rights Reserved</strong></p>
 <p>This repository is provided for <strong>viewing only</strong>. Forking, cloning, copying, modifying, or redistributing any content (source code, SVG graphics, README, configuration, or design) is <strong>strictly prohibited</strong> without prior written permission from the author.</p>
-<p>Unauthorized use constitutes a violation of copyright law and will be pursued under applicable legal remedies. See <a href="https://github.com/marchenkovit/marchenkovit/blob/main/LICENSE">LICENSE</a> for full terms.</p>
+<p>Unauthorized use constitutes a violation of copyright law and will be pursued under applicable legal remedies. See <a href="{{ site.github.repository_url }}/blob/main/LICENSE">LICENSE</a> for full terms.</p>
 </blockquote>
