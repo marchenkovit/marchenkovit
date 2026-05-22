@@ -71,7 +71,16 @@
     "HAProxy",
     "Cisco Meraki",
     "MySQL",
-    "PostgreSQL"
+    "PostgreSQL",
+    "Redis",
+    "Amazon EKS",
+    "CloudFlare",
+    "Infrastructure as Code",
+    "GitOps",
+    "Observability",
+    "ELK Stack",
+    "GitLab CI",
+    "GitHub Actions"
   ],
   "knowsLanguage": [
     { "@type": "Language", "name": "English", "alternateName": "en" },
@@ -118,7 +127,7 @@
     var frag = document.createDocumentFragment();
     headings.forEach(function (h, i) {
       if (!h.id) {
-        h.id = 'sec-' + (h.textContent.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '') || ('sec-' + i));
+        h.id = 'sec-' + (h.textContent.toLowerCase().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '') || i);
       }
       var li = document.createElement('li');
       var a = document.createElement('a');
