@@ -164,7 +164,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 <tr>
   <td valign="top">
 
-**🌐 Networking & VPN Protocols**
+**🌐 Networking & VPN**
 
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![HAProxy](https://img.shields.io/badge/HAProxy-106DA9?style=flat-square&logo=haproxy&logoColor=white)
