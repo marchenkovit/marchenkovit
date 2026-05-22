@@ -193,21 +193,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
-## 📦 Open Source
-
-<div class="oss-card">
-
-### 🍺 [Brewfile · MacBook Pro M3 Setup](https://github.com/marchenkovit/Brewfile)
-
-One-command macOS development environment restore — Homebrew packages, casks, VS Code extensions, shell config, AWS profiles, kubectl contexts, and macOS defaults. Idempotent installer adopts apps already on disk instead of re-downloading.
-
-<a class="pill" style="background:#181717" href="https://github.com/marchenkovit/Brewfile">View source</a>
-<a class="pill" style="background:#22C55E" href="https://marchenkovit.github.io/Brewfile/">Live demo</a>
-
-</div>
-
----
-
 ## 🐍 Contribution Activity
 
 <div align="center">
