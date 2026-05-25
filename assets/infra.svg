@@ -18,11 +18,9 @@
     </marker>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="880" fill="url(#iBg)"/>
   <rect width="1200" height="880" fill="url(#iGrid)"/>
 
-  <!-- ============ LAYER 1: GLOBAL USERS ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0s" fill="freeze"/>
 
@@ -32,7 +30,6 @@
     <text x="128" y="75" font-size="18" fill="#0f172a" font-weight="700">GLOBAL USERS</text>
     <text x="128" y="100" font-size="13" fill="#64748b" letter-spacing="2" font-weight="600">·  HTTPS TRAFFIC FROM 5 CONTINENTS</text>
 
-    <!-- Region pills -->
     <g transform="translate(640, 68)">
       <rect x="0" y="0" width="140" height="34" rx="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
       <text x="70" y="23" text-anchor="middle" fill="#0284c7" font-size="13" font-weight="700">🌎 Americas</text>
@@ -47,14 +44,12 @@
     </g>
   </g>
 
-  <!-- Arrow L1 → L2 -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.4s" fill="freeze"/>
     <line x1="600" y1="120" x2="600" y2="164" stroke="#64748b" stroke-width="2" marker-end="url(#arrowHead)"/>
     <text x="615" y="148" font-size="11" fill="#64748b" font-weight="600" letter-spacing="1">HTTPS / TLS</text>
   </g>
 
-  <!-- ============ LAYER 2: CLOUDFLARE EDGE ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.6s" fill="freeze"/>
 
@@ -64,7 +59,6 @@
     <text x="128" y="205" font-size="18" fill="#0f172a" font-weight="700">CLOUDFLARE EDGE</text>
     <text x="128" y="230" font-size="13" fill="#64748b" letter-spacing="2" font-weight="600">·  WAF · DDoS PROTECTION · CDN · GEO-ROUTING</text>
 
-    <!-- Feature pills -->
     <g transform="translate(700, 183)">
       <rect x="0" y="0" width="86" height="26" rx="13" fill="#fff7ed" stroke="#F38020" stroke-width="1"/>
       <text x="43" y="18" text-anchor="middle" fill="#c2410c" font-size="11" font-weight="700">WAF</text>
@@ -83,7 +77,6 @@
     </g>
   </g>
 
-  <!-- Arrow L2 → regions (fan out) -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.0s" fill="freeze"/>
     <path d="M 600 250 L 600 275 L 235 275 L 235 300" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
@@ -91,8 +84,6 @@
     <path d="M 600 250 L 600 275 L 965 275 L 965 300" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrowHead)"/>
   </g>
 
-  <!-- ============ LAYER 3: THREE REGIONAL COLUMNS ============ -->
-  <!-- Column 1: US (Primary) -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.2s" fill="freeze"/>
 
@@ -129,7 +120,6 @@
     </g>
   </g>
 
-  <!-- Column 2: EU -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
 
@@ -166,7 +156,6 @@
     </g>
   </g>
 
-  <!-- Column 3: APAC -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.6s" fill="freeze"/>
 
@@ -203,7 +192,6 @@
     </g>
   </g>
 
-  <!-- DB Replication arrows between regions -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="0.7" dur="0.6s" begin="2.0s" fill="freeze"/>
     <path d="M 370 540 Q 410 555 445 540" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
@@ -212,11 +200,9 @@
     <text x="753" y="535" font-size="9" fill="#475569" font-weight="700" letter-spacing="1">REPL</text>
   </g>
 
-  <!-- ============ LAYER 4: OBSERVABILITY + DR ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.2s" fill="freeze"/>
 
-    <!-- Observability (left) -->
     <rect x="60" y="640" width="530" height="110" rx="12" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
     <text x="84" y="675" font-size="22">📊</text>
     <text x="116" y="675" font-size="17" fill="#0f172a" font-weight="700">OBSERVABILITY STACK</text>
@@ -239,7 +225,6 @@
       <text x="65" y="18" text-anchor="middle" fill="#15803d" font-size="11" font-weight="700">Alertmanager</text>
     </g>
 
-    <!-- DR & Backups (right) -->
     <rect x="610" y="640" width="530" height="110" rx="12" fill="#ffffff" stroke="#475569" stroke-width="1.5" stroke-opacity="0.5" filter="url(#iShadow)"/>
     <text x="634" y="675" font-size="22">💾</text>
     <text x="666" y="675" font-size="17" fill="#0f172a" font-weight="700">DR &amp; BACKUPS</text>
@@ -259,7 +244,6 @@
     </g>
   </g>
 
-  <!-- ============ LAYER 5: INFRASTRUCTURE AS CODE ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.5s" fill="freeze"/>
 
