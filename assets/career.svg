@@ -42,11 +42,9 @@
     </pattern>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="860" fill="url(#tBg)"/>
   <rect width="1200" height="860" fill="url(#gridT)"/>
 
-  <!-- Header -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0s" fill="freeze"/>
     <text x="600" y="60" text-anchor="middle" fill="#0f172a" font-size="28" font-weight="800" letter-spacing="4">
@@ -57,44 +55,35 @@
     </text>
   </g>
 
-  <!-- Vertical timeline line -->
   <rect x="178" y="150" width="4" height="640" rx="2" fill="url(#timelineLine)" opacity="0.7"/>
 
-  <!-- Animated pulse flowing down timeline line -->
   <circle cx="180" cy="150" r="5" fill="#0f172a" opacity="0">
     <animate attributeName="cy" values="150;790" dur="4s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- ============ 2014: SysAdmin ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.3s" fill="freeze"/>
 
-    <!-- Glow halo -->
     <circle cx="180" cy="215" r="46" fill="url(#nodeGlow1)">
       <animate attributeName="r" values="44;52;44" dur="3s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Year badge -->
     <rect x="32" y="195" width="100" height="40" rx="20" fill="#ffffff" stroke="#0284c7" stroke-width="2.5" filter="url(#cardShadow)"/>
     <text x="82" y="221" text-anchor="middle" fill="#0284c7" font-size="18" font-weight="800" letter-spacing="2">2014</text>
 
-    <!-- Node dot -->
     <circle cx="180" cy="215" r="11" fill="#ffffff" stroke="#0284c7" stroke-width="3.5"/>
     <circle cx="180" cy="215" r="5" fill="#0284c7">
       <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Content card -->
     <g transform="translate(220, 165)">
       <rect x="0" y="0" width="860" height="104" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.35" filter="url(#cardShadow)"/>
 
-      <!-- Title row -->
       <text x="24" y="42" font-size="28" font-weight="800">🖥️</text>
       <text x="62" y="42" font-size="22" fill="#0f172a" font-weight="700">SysAdmin</text>
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  STARTING OUT</text>
 
-      <!-- Bullets -->
       <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Hundreds of VPS under management
       </text>
@@ -104,7 +93,6 @@
     </g>
   </g>
 
-  <!-- ============ 2017: Senior SysAdmin ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.9s" fill="freeze"/>
 
@@ -136,7 +124,6 @@
     </g>
   </g>
 
-  <!-- ============ 2020: DevOps ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.5s" fill="freeze"/>
 
@@ -171,11 +158,9 @@
     </g>
   </g>
 
-  <!-- ============ 2026: SRE (current) ============ -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.1s" fill="freeze"/>
 
-    <!-- Pulsing "NOW" halo -->
     <circle cx="180" cy="755" r="52" fill="url(#nodeGlow4)">
       <animate attributeName="r" values="48;60;48" dur="2s" repeatCount="indefinite"/>
     </circle>
@@ -193,18 +178,14 @@
     <g transform="translate(220, 695)">
       <rect x="0" y="0" width="860" height="128" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="2" stroke-opacity="0.6" filter="url(#cardShadow)"/>
 
-      <!-- Title row (left side) — short role acronym to match card pattern -->
       <text x="24" y="42" font-size="28" font-weight="800">🚀</text>
       <text x="62" y="42" font-size="22" fill="#0f172a" font-weight="700">SRE</text>
 
-      <!-- "CURRENT" badge inline with title -->
       <rect x="124" y="22" width="96" height="28" rx="14" fill="#16a34a"/>
       <text x="172" y="41" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="800" letter-spacing="3">CURRENT</text>
 
-      <!-- Subtitle -->
       <text x="62" y="68" font-size="15" fill="#64748b" letter-spacing="2" font-weight="600">·  CLOUD-NATIVE ERA</text>
 
-      <!-- Bullets on the right side like other cards -->
       <text x="380" y="42" font-size="17" fill="#334155">
         <tspan fill="#16a34a" font-weight="bold">›</tspan>  Multi-region <tspan fill="#d97706" font-weight="bold">AWS</tspan> · <tspan fill="#d97706" font-weight="bold">6 clusters</tspan> · 5 continents
       </text>
@@ -217,7 +198,6 @@
     </g>
   </g>
 
-  <!-- Footer tags -->
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="2.7s" fill="freeze"/>
     <text x="600" y="842" text-anchor="middle" font-size="15" fill="#475569" letter-spacing="4" font-weight="700">
