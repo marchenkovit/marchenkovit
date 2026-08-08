@@ -1,0 +1,6 @@
+# Hosts excluded from the CI link check (see .github/workflows/site-checks.yml).
+# These are NOT broken — they reject datacenter/CI IPs, so checking them would
+# make the workflow flake. Verify them by hand if they ever change.
+
+# Telegram serves 403/timeouts to CI runners.
+https://t.me/

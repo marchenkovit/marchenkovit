@@ -78,6 +78,15 @@ img{height:auto}
 .site-footer-owner{display:block;font-weight:600;color:#1f2937;margin-bottom:.25rem}
 .site-footer a{color:#0d9488}
 
+/* Blog index + post pages */
+.post-list{margin:1.5rem 0}
+.post-item{padding:1rem 1.1rem;margin-bottom:.9rem;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #0d9488;border-radius:6px}
+.post-title{font-size:1.1rem;font-weight:700}
+.post-meta{font-size:.85rem;color:#64748b;margin:.3rem 0}
+.post-excerpt{margin:.5rem 0 0;font-size:.95rem}
+.post-tag{display:inline-block;padding:1px 7px;margin-left:4px;font-size:11px;font-weight:600;color:#0f766e;background:#ccfbf1;border-radius:3px}
+.post-back{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #e2e8f0}
+
 /* Floating Table of Contents (built by JS) */
 #page-toc{position:fixed;top:50%;right:24px;transform:translateY(-50%);background:rgba(255,255,255,.97);border:1px solid #e2e8f0;padding:14px 20px 14px 18px;border-radius:8px;font-size:13px;line-height:1.5;max-width:240px;max-height:70vh;overflow-y:auto;box-shadow:0 4px 14px rgba(0,0,0,.08);z-index:1000}
 #page-toc strong{display:block;margin-bottom:10px;color:#157878;font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:700}
@@ -113,6 +122,45 @@ img{height:auto}
   .page-header{padding:1.5rem .75rem 1.75rem}
   .btn{display:block;width:100%;max-width:260px;margin:.4rem auto;text-align:center}
   .main-content{padding:1.25rem .85rem;font-size:.92rem}
+}
+
+/* Dark mode — follows the OS setting. The page header is already dark in both
+   themes, so only the content surfaces below it are re-mapped here.
+   Tech-stack pills keep their brand backgrounds (set inline) in both themes. */
+@media (prefers-color-scheme:dark){
+  html{color-scheme:dark}
+  body{background:#0f172a;color:#e2e8f0}
+  .main-content h1,.main-content h2{color:#5eead4}
+  .main-content h3{color:#7dd3fc}
+  .main-content strong{color:#f1f5f9}
+  .main-content a:not(.pill):not(.cpill):not(.btn){color:#5eead4}
+  .main-content a:not(.pill):not(.cpill):not(.btn):hover{color:#99f6e4}
+  .main-content hr{background:#1e293b}
+  .main-content code{color:#e2e8f0;background:#1e293b}
+  .main-content pre{color:#e2e8f0;background:#1e293b;border-color:#334155}
+  .main-content blockquote{color:#cbd5e1;background:#1e293b;border-left-color:#334155}
+  .main-content blockquote.markdown-alert-important{background:#042f2e;border-left-color:#5eead4}
+  .main-content th,.main-content td{border-color:#334155}
+  .main-content th{background:#1e293b}
+  .engagement-card{background:#1e293b;border-color:#334155}
+  .cert-card{background:#042f2e;border-color:#134e4a}
+  .cert-title{color:#f1f5f9}
+  .cert-meta{color:#94a3b8}
+  .site-footer{border-top-color:#334155;color:#94a3b8}
+  .site-footer-owner{color:#e2e8f0}
+  .site-footer a{color:#5eead4}
+  #page-toc{background:rgba(15,23,42,.97);border-color:#334155;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+  #page-toc strong{color:#5eead4}
+  #page-toc a{color:#cbd5e1}
+  #page-toc a:hover{color:#5eead4;border-left-color:#5eead4;background:#1e293b}
+  #skip-to-content:focus{background:#0f172a;color:#5eead4;border-color:#5eead4}
+  .post-item{background:#1e293b;border-color:#334155}
+  .post-meta{color:#94a3b8}
+  .post-tag{color:#ccfbf1;background:#134e4a}
+  .post-back{border-top-color:#334155}
+  /* The hero/career/infra/workflow artwork is drawn on a light canvas; soften it
+     so it reads as a card instead of glaring against the dark page. */
+  .main-content img{filter:brightness(.94) contrast(1.02)}
 }
 
 /* Print */

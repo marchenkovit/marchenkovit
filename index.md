@@ -193,6 +193,26 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 ---
 
+## 🧰 Selected Work
+
+<div class="engagement-card">
+
+**marchenko.work** — this site
+*Themeless Jekyll on GitHub Pages*
+
+- Zero render-blocking requests — no external stylesheet, no webfont, no framework
+- All CSS inlined into the document; non-critical JS deferred via `requestIdleCallback`
+- Explicit dimensions on every image, so the layout never shifts as artwork loads
+- Hand-authored SVG graphics instead of third-party badge services
+- CI builds the site and link-checks the built output before anything merges
+
+<a class="pill" style="background:#181717" href="{{ site.github.repository_url }}">Source</a>
+<a class="pill" style="background:#0d9488" href="{{ '/blog/zero-render-blocking-github-pages/' | relative_url }}">Write-up</a>
+
+</div>
+
+---
+
 ## 🐍 Contribution Activity
 
 <div align="center">

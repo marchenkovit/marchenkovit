@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article class="post">
+  <p class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+    {% if page.tags.size > 0 %}
+      · {% for tag in page.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}
+    {% endif %}
+  </p>
+
+  {{ content }}
+
+  <p class="post-back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+</article>
