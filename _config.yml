@@ -13,7 +13,6 @@ plugins:
   - jekyll-commonmark-ghpages
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
 
 url: "https://marchenko.work"
 permalink: /:path/
