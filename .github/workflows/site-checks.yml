@@ -38,12 +38,13 @@ jobs:
             --max-retries 2
             --timeout 20
             --accept 200,206,301,302,429
-            --base _site
+            --root-dir ${{ github.workspace }}/_site
             --exclude '^https://marchenko\.work'
             './_site/**/*.html'
           fail: true
-        # --base resolves root-relative links (/assets/…, /blog/…) against the
-        # built tree, so they are verified as files rather than guessed at.
+        # --root-dir (absolute path, required by lychee v2) resolves root-relative
+        # links (/assets/…, /blog/…) against the built tree, so they are verified
+        # as real files rather than skipped.
         # Own-origin URLs are excluded because canonical/og:url tags point at
         # production: on a PR that adds a page, that page is not deployed yet and
         # would 404 here despite being correct. Internal links are already
