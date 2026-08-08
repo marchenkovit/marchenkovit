@@ -259,7 +259,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 Themeless Jekyll on GitHub Pages, tuned for zero render-blocking requests: no external stylesheet, no webfont, no framework. All CSS is inlined into the document, non-critical JS is deferred via `requestIdleCallback`, every image carries explicit dimensions so the layout never shifts, and CI builds the site and link-checks the built output before anything merges.
 
 [![Live](https://img.shields.io/badge/Live-marchenko.work-0d9488?style=flat-square&logo=githubpages&logoColor=white)](https://marchenko.work)
-[![Write-up](https://img.shields.io/badge/Write--up-Zero_render--blocking-157878?style=flat-square&logo=markdown&logoColor=white)](https://marchenko.work/blog/zero-render-blocking-github-pages/)
 
 ---
 

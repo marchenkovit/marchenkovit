@@ -207,7 +207,6 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 - CI builds the site and link-checks the built output before anything merges
 
 <a class="pill" style="background:#181717" href="{{ site.github.repository_url }}">Source</a>
-<a class="pill" style="background:#0d9488" href="{{ '/blog/zero-render-blocking-github-pages/' | relative_url }}">Write-up</a>
 
 </div>
 
