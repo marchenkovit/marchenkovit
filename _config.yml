@@ -32,6 +32,13 @@ twitter:
 goatcounter_code: ""
 
 defaults:
+  # Hand it to jekyll-seo-tag rather than writing og:image by hand: the plugin
+  # only upgrades twitter:card to summary_large_image when it knows about an
+  # image, and it emits og:image / twitter:image itself from this value.
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.png
   - scope:
       path: "assets/certs"
     values:
