@@ -18,6 +18,13 @@ plugins:
 url: "https://marchenko.work"
 permalink: /:path/
 
+# jekyll-seo-tag emits twitter:card itself and defaults to "summary" (small
+# thumbnail). Setting it here makes it emit the large-image card instead —
+# defining a second tag by hand does not work, since the first one in the
+# document wins.
+twitter:
+  card: summary_large_image
+
 # Privacy-friendly analytics (no cookies, no consent banner needed).
 # Dormant until filled in: sign up at https://www.goatcounter.com, then put your
 # subdomain here (e.g. "marchenko" for marchenko.goatcounter.com). Empty = no
