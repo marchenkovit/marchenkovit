@@ -1,0 +1,43 @@
+name: Site checks
+
+# Catches, before merge, the two classes of breakage this site has actually hit:
+#   1. A Jekyll/Liquid/_config.yml error — previously only surfaced as a failed
+#      pages-build-deployment after the merge had already landed on main.
+#   2. Links that work on github.com but 404 on the Pages site, e.g. ./LICENSE
+#      (LICENSE is in _config.yml `exclude:`, so it is never built).
+# Checking the BUILT _site — not the raw markdown — is what makes case 2 visible.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Same toolchain GitHub Pages uses in production, so a green build here
+      # means the real deploy will build too.
+      - name: Build site
+        uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1.0.13
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Check links in built site
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: >-
+            --no-progress
+            --max-retries 2
+            --timeout 20
+            --accept 200,206,301,302,429
+            --exclude-path _site/assets
+            './_site/**/*.html'
+          fail: true

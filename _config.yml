@@ -13,9 +13,16 @@ plugins:
   - jekyll-commonmark-ghpages
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 
 url: "https://marchenko.work"
 permalink: /:path/
+
+# Privacy-friendly analytics (no cookies, no consent banner needed).
+# Dormant until filled in: sign up at https://www.goatcounter.com, then put your
+# subdomain here (e.g. "marchenko" for marchenko.goatcounter.com). Empty = no
+# script is emitted at all, so the page stays free of third-party requests.
+goatcounter_code: ""
 
 defaults:
   - scope:
