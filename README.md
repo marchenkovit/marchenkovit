@@ -7,7 +7,7 @@
 
 [![Email](https://img.shields.io/badge/Email-marchenko.vitaliy1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:marchenko.vitaliy1@gmail.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40m__a__r__c__h__e__n__k__o-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/m_a_r_c_h_e_n_k_o)
-[![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)](#)
+![Location](https://img.shields.io/badge/Location-Ukraine-FFD700?style=flat-square&logo=googlemaps&logoColor=white)
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-b91c1c?style=flat-square)](./LICENSE)
 
 </div>
@@ -172,7 +172,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
 ![IKEv2/IPsec](https://img.shields.io/badge/IKEv2%2FIPsec-1E90FF?style=flat-square&logoColor=white)
 ![strongSwan](https://img.shields.io/badge/strongSwan-E30613?style=flat-square&logoColor=white)
-![L2TP](https://img.shields.io/badge/L2TP%2FIPsec-4B8BBE?style=flat-square&logoColor=white)
+![L2TP/IPsec](https://img.shields.io/badge/L2TP%2FIPsec-4B8BBE?style=flat-square&logoColor=white)
 ![SoftEther](https://img.shields.io/badge/SoftEther-00A4EF?style=flat-square&logoColor=white)
 ![OpenConnect](https://img.shields.io/badge/OpenConnect-0080C0?style=flat-square&logoColor=white)
 ![Shadowsocks](https://img.shields.io/badge/Shadowsocks-0075C2?style=flat-square&logoColor=white)
