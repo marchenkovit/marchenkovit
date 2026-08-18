@@ -96,7 +96,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 **☁️ Cloud & Infrastructure**
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white)
+![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white)
 ![Hetzner](https://img.shields.io/badge/Hetzner-D50C2D?style=flat-square&logo=hetzner&logoColor=white)
 ![CloudFlare](https://img.shields.io/badge/CloudFlare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)
@@ -177,7 +177,7 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 ![OpenConnect](https://img.shields.io/badge/OpenConnect-0080C0?style=flat-square&logoColor=white)
 ![Shadowsocks](https://img.shields.io/badge/Shadowsocks-0075C2?style=flat-square&logoColor=white)
 ![V2Ray/Xray](https://img.shields.io/badge/V2Ray%2FXray-705FD7?style=flat-square&logoColor=white)
-![Trojan](https://img.shields.io/badge/Trojan--GFW-222222?style=flat-square&logoColor=white)
+![Trojan-GFW](https://img.shields.io/badge/Trojan--GFW-222222?style=flat-square&logoColor=white)
 ![SOCKS5](https://img.shields.io/badge/SOCKS5-5A6C80?style=flat-square&logoColor=white)
 
   </td>
@@ -225,8 +225,8 @@ Site Reliability Engineer / DevOps with **11+ years** of hands-on experience ope
 
 | | Course | Provider | Date | Score | Verify |
 | :---: | --- | :---: | :---: | :---: | :---: |
-| 🐧 | **Linux System Administration** | ITEA Academy | Jul 2023 | ![Score](https://img.shields.io/badge/100%2F100-22C55E?style=flat-square) | [№ 4020425002](./assets/certs/itea-linux-system-administration.pdf) |
-| ⚙️ | **DevOps** | ITEA Academy | Dec 2023 | ![Score](https://img.shields.io/badge/87%2F100-22C55E?style=flat-square) | [№ 4010324007](./assets/certs/itea-devops.pdf) |
+| 🐧 | **Linux System Administration** | ITEA Academy | Jul 2023 | ![Score 100/100](https://img.shields.io/badge/100%2F100-22C55E?style=flat-square) | [№ 4020425002](./assets/certs/itea-linux-system-administration.pdf) |
+| ⚙️ | **DevOps** | ITEA Academy | Dec 2023 | ![Score 87/100](https://img.shields.io/badge/87%2F100-22C55E?style=flat-square) | [№ 4010324007](./assets/certs/itea-devops.pdf) |
 
 ---
 
