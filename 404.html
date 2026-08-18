@@ -5,61 +5,14 @@ description: "The page you're looking for doesn't exist on marchenko.work."
 permalink: /404.html
 ---
 
-<style>
-.notfound-hero {
-  text-align: center;
-  padding: 2rem 0 1rem;
-}
-.notfound-code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: clamp(6rem, 18vw, 10rem);
-  font-weight: 800;
-  line-height: 1;
-  background: linear-gradient(120deg, #0f172a, #157878);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: -0.04em;
-}
-.notfound-sub {
-  font-size: 1.2rem;
-  color: #475569;
-  margin: 0.5rem 0 2rem;
-}
-.notfound-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: center;
-  margin: 2rem 0;
-}
-.notfound-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1.2rem;
-  border: 1px solid #94a3b8;
-  border-radius: 8px;
-  color: #0f172a !important;
-  text-decoration: none !important;
-  font-weight: 500;
-  transition: all 0.15s ease;
-}
-.notfound-links a:hover {
-  border-color: #0d9488;
-  background: #f0fdfa;
-  color: #0d9488 !important;
-}
-</style>
-
 <div class="notfound-hero">
   <div class="notfound-code">404</div>
   <p class="notfound-sub">The page you were looking for is somewhere else — like most things in distributed systems.</p>
 
   <div class="notfound-links">
-    <a href="/">🏠 Home</a>
-    <a href="/assets/CV_Vitalii_Marchenko.pdf" download>📄 Download CV</a>
-    <a href="https://github.com/marchenkovit">💼 GitHub</a>
+    <a href="{{ '/' | relative_url }}">🏠 Home</a>
+    <a href="{{ '/assets/CV_Vitalii_Marchenko.pdf' | relative_url }}" download>📄 Download CV</a>
+    <a href="{{ site.github.owner_url }}">💼 GitHub</a>
     <a href="mailto:marchenko.vitaliy1@gmail.com">✉️ Email</a>
   </div>
 </div>

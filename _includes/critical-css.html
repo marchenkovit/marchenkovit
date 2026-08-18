@@ -73,6 +73,15 @@ img{height:auto}
 .cert-meta{font-size:.85rem;color:#475569;margin-bottom:.7rem}
 .cert-verify{margin-top:.7rem;font-size:.85rem}
 
+/* 404 page (markup lives in 404.html — styles stay here so the dark-mode block
+   below can never drift out of sync with them again) */
+.notfound-hero{text-align:center;padding:2rem 0 1rem}
+.notfound-code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(6rem,18vw,10rem);font-weight:800;line-height:1;letter-spacing:-.04em;background:linear-gradient(120deg,#0f172a,#157878);-webkit-background-clip:text;background-clip:text;color:transparent}
+.notfound-sub{margin:.5rem 0 2rem;font-size:1.2rem;color:#475569}
+.notfound-links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin:2rem 0}
+.notfound-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.2rem;font-weight:500;color:#0f172a!important;border:1px solid #94a3b8;border-radius:8px;text-decoration:none!important;transition:border-color .15s ease,background .15s ease,color .15s ease}
+.notfound-links a:hover{color:#0d9488!important;border-color:#0d9488;background:#f0fdfa}
+
 /* Footer */
 .site-footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid #e2e8f0;font-size:.9rem;color:#64748b}
 .site-footer-owner{display:block;font-weight:600;color:#1f2937;margin-bottom:.25rem}
@@ -145,6 +154,12 @@ img{height:auto}
   #page-toc a{color:#cbd5e1}
   #page-toc a:hover{color:#5eead4;border-left-color:#5eead4;background:#1e293b}
   #skip-to-content:focus{background:#0f172a;color:#5eead4;border-color:#5eead4}
+  /* 404 page — the light gradient starts on #0f172a, which IS the dark-mode page
+     background, and the link colour is the same value; both vanish without this. */
+  .notfound-code{background-image:linear-gradient(120deg,#e2e8f0,#5eead4)}
+  .notfound-sub{color:#94a3b8}
+  .notfound-links a{color:#e2e8f0!important;border-color:#475569}
+  .notfound-links a:hover{color:#5eead4!important;border-color:#5eead4;background:#1e293b}
   /* The hero/career/infra/workflow artwork is drawn on a light canvas; soften it
      so it reads as a card instead of glaring against the dark page. */
   .main-content img{filter:brightness(.94) contrast(1.02)}
